@@ -13,7 +13,7 @@ import pandas
 
 def barrier_extent(barrier_type):
 
-    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass_dev/functions/postgisftw.wcrp_barrier_extent/items.json?watershed_group_code=BULK&barrier_type=' + barrier_type
+    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass/functions/postgisftw.wcrp_barrier_extent/items.json?watershed_group_code=BULK&barrier_type=' + barrier_type
 
     response_api = requests.get(request)
     parse = response_api.text
@@ -25,7 +25,7 @@ def barrier_extent(barrier_type):
     return blocked_km, blocked_pct
 
 def barrier_count(barrier_type):
-    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass_dev/functions/postgisftw.wcrp_barrier_count/items.json?watershed_group_code=BULK&barrier_type=' + barrier_type
+    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass/functions/postgisftw.wcrp_barrier_count/items.json?watershed_group_code=BULK&barrier_type=' + barrier_type
 
     response_api = requests.get(request)
     parse = response_api.text
@@ -42,7 +42,7 @@ def barrier_count(barrier_type):
 
 def barrier_severity(barrier_type):
 
-    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass_dev/functions/postgisftw.wcrp_barrier_severity/items.json?watershed_group_code=BULK&barrier_type=' + barrier_type
+    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass/functions/postgisftw.wcrp_barrier_severity/items.json?watershed_group_code=BULK&barrier_type=' + barrier_type
 
     response_api = requests.get(request)
     parse = response_api.text
@@ -56,7 +56,7 @@ def barrier_severity(barrier_type):
 
 def watershed_connectivity(habitat_type):
 
-    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass_dev/functions/postgisftw.wcrp_habitat_connectivity_status/items.json?watershed_group_code=BULK&barrier_type=' + habitat_type
+    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass/functions/postgisftw.wcrp_habitat_connectivity_status/items.json?watershed_group_code=BULK&barrier_type=' + habitat_type
 
     response_api = requests.get(request)
     parse = response_api.text
@@ -85,9 +85,9 @@ gain <- py$gain
 
 ```
 
-## Horsefly River Watershed Barrier Prioritization Summary {-}
+## Bulkley River Watershed Barrier Prioritization Summary {-}
 
-The primary conservation outcome of the WCRP will be the remediation of barriers to connectivity in the Horsefly River watershed. To achieve Goal 1 in this plan, it is necessary to prioritize and identify a suite of barriers that, if remediated, will provide access to a minimum of `r gain` km of spawning or rearing habitat (@tbl-table16):
+The primary conservation outcome of the WCRP will be the remediation of barriers to connectivity in the Bulkley River watershed. To achieve Goal 1 in this plan, it is necessary to prioritize and identify a suite of barriers that, if remediated, will provide access to a minimum of `r gain` km of spawning or rearing habitat (@tbl-table16):
 
 
 ```{python echo=FALSE}
