@@ -100,8 +100,8 @@ df = pd.DataFrame({"Target Species":["Andromous Salmon"," "],
                    "Indicator":["% of total spawning habitat","Current Status:"],
                    "Poor":["<50%"," "],
                    "Fair":["51-75%"," "],
-                   "Good":["76-90%"," 88%"],
-                   "Very Good":[">90%", watershed_connectivity("ALL")]
+                   "Good":["76-90%", "88"],
+                   "Very Good":[">90%"," "]  # watershed_connectivity("ALL")]
                    })
 
 
@@ -112,7 +112,7 @@ def highlighttab7(val):
     dgreen = '#03853e;'
 
     if val=="<50%" : color = red
-    elif val[0:].isdigit() and int(val) < 76 : color = red
+    elif val[0:].isdigit() and int(val) < 50 : color = red
     elif val=="51-75%": color = yellow
     elif val=="76-90%"  : color = lgreen
     elif val[0:].isdigit() and (int(val) >= 76 and int(val) < 90) : color = lgreen 
@@ -147,7 +147,7 @@ df = pd.DataFrame({"Target Species":["Andromous Salmon",""],
                    "KEA":["Available Rearing Habitat",""],
                    "Indicator":["% of total rearing habitat","Current Status:"],
                    "Poor":["<50%"," "],
-                   "Fair":["51-75%"," 70%"],
+                   "Fair":["51-75%", "70"],
                    "Good":["76–90%"," "],
                    "Very Good":[">90%"," "]
                    })
@@ -159,8 +159,9 @@ def highlighttab7b(val):
     dgreen = '#03853e;'
 
     if val=="<50%" : color = red
-    elif val[0:].isdigit() and int(val) < 76 : color = red
+    elif val[0:].isdigit() and int(val) < 50 : color = red
     elif val=="51-75%": color = yellow
+    elif val[0:].isdigit() and (int(val) >= 51 and int(val) < 75) : color = yellow 
     elif val=="76–90%"  : color = lgreen
     elif val[0:].isdigit() and (int(val) >= 76 and int(val) < 90) : color = lgreen 
     elif val ==">90%": color = dgreen
