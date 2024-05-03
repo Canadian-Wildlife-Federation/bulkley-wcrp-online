@@ -61,12 +61,36 @@ data.set_table_styles(
    }])
 
 ```
-## Funding Sources {-}
-```{r fund, echo = FALSE, results = 'asis'}
+
+```{r keyact, echo = FALSE, results = 'asis'}
 #| label: tbl-fund
-#| tbl-cap: "Potential funding sources for plan implementation in the Bulkley River watershed. The Canadian Wildlife Federation and the planning team can coordinate proposal submission through these sources."
+#| tbl-cap: "Additional Key Actors in the Bulkley River watershed. Key Actors are the individuals, groups, and/or organizations, outside of the planning team, with influence and relevant experience in the watershed, whose engagement will be critical for the successful implementation of this WCRP."
 #| warning: false
 
 library("flextable")
 
+data <- read.csv("data/funding-sources.csv", check.names=FALSE)
+ft <- flextable(data)
+ft <- bg(ft, bg = "#008270", part = "header")
+ft <- color(ft, color = "white", part = "header")
+ft <- set_caption(ft)
+ft |> autofit() 
+```
+
+## Annual Progress Report {-}
+
+One priority barrier in the Bulkley watershed was removed on McDowell Creek at Woodmere Nursery in summer 2023. This crossing was replaced with a clearspan bridge and opens up approximately 200 m of seasonal off-channel habitat for salmonids during periods of high flow. The Ministry of Transportation and Infrastructure has been working with local partners to advance designs for barriers on Trib to Buck Creek, Helps Creek, Thompson Creek and Gramophone Creek. The Office of the Wet’suwet’en has hired a part-time staff to help with fish passage coordination in the Bulkley watershed. In addition, efforts have been made by CWF and local partners to build a campaign around Station Creek, to convince the BC government to invest in an appropriate crossing at Highway 16.
+
+```{r keyact, echo = FALSE, results = 'asis'}
+#| label: tbl-progress
+#| warning: false
+
+library("flextable")
+
+data <- read.csv("data/progress.csv", check.names=FALSE)
+ft <- flextable(data)
+ft <- bg(ft, bg = "#008270", part = "header")
+ft <- color(ft, color = "white", part = "header")
+ft <- set_caption(ft)
+ft |> autofit() 
 ```
