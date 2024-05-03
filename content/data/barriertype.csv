@@ -1,0 +1,8 @@
+Barrier Types  ,Extent,Severity,Irreversibility,Overall Threat Rating:
+Road-stream Crossings,High,Very High,Medium,High
+Rail-stream Crossings,Low,Low,Medium,High
+Lateral Barriers,Medium,Very High,Medium,Medium
+Natural Barriers,Medium,High,Medium,Medium
+Large Dams (>3m height),Low,Very High,High,Low
+Small Dams (<3m height),Low,Very High,Medium,Low
+Trail-stream Crossings,Medium,Medium,Low,Low
