@@ -83,6 +83,7 @@ One priority barrier in the Bulkley watershed was removed on McDowell Creek at W
 
 ```{r keyact, echo = FALSE, results = 'asis'}
 #| label: tbl-progress
+#| tbl-cap: "2024-2025 Work Plan"
 #| warning: false
 
 library("flextable")

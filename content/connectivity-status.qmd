@@ -59,7 +59,7 @@ def barrier_severity(barrier_type):
 
 def watershed_connectivity(habitat_type):
 
-    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass/functions/postgisftw.wcrp_habitat_connectivity_status/items.json?watershed_group_code=BULK&barrier_type=' + habitat_type
+    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass/functions/postgisftw.wcrp_habitat_connectivity_status/items.json?watershed_group_code=BULK&habitat_type=' + habitat_type
 
     response_api = requests.get(request)
     parse = response_api.text
@@ -100,7 +100,7 @@ df = pd.DataFrame({"Target Species":["Andromous Salmon"," "],
                    "Indicator":["% of total spawning habitat","Current Status:"],
                    "Poor":["<50%"," "],
                    "Fair":["51-75%"," "],
-                   "Good":["76-90%", "88"],
+                   "Good":["76-90%", watershed_connectivity("SPAWNING")],
                    "Very Good":[">90%"," "]  # watershed_connectivity("ALL")]
                    })
 
@@ -114,6 +114,7 @@ def highlighttab7(val):
     if val=="<50%" : color = red
     elif val[0:].isdigit() and int(val) < 50 : color = red
     elif val=="51-75%": color = yellow
+    elif val[0:].isdigit() and (int(val) >= 51 and int(val) < 76) : color = lgreen 
     elif val=="76-90%"  : color = lgreen
     elif val[0:].isdigit() and (int(val) >= 76 and int(val) < 90) : color = lgreen 
     elif val ==">90%": color = dgreen
@@ -147,7 +148,7 @@ df = pd.DataFrame({"Target Species":["Andromous Salmon",""],
                    "KEA":["Available Rearing Habitat",""],
                    "Indicator":["% of total rearing habitat","Current Status:"],
                    "Poor":["<50%"," "],
-                   "Fair":["51-75%", "70"],
+                   "Fair":["51-75%",watershed_connectivity("REARING")],
                    "Good":["76–90%"," "],
                    "Very Good":[">90%"," "]
                    })
