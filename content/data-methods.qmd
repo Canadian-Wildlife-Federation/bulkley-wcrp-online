@@ -4,7 +4,8 @@
 
 High-resolution PDF maps of the Bulkley River watershed and model results can be accessed [here](https://github.com/smnorris/bcfishpass/tree/main/wcrp/pdfs). The watershed is divided into multiple maps sheets to allow for detailed examination of modelled spawning and rearing habitat and priority barriers identified through this planning process. The locations of WCRP priority barriers and associated map sheet numbers are shown below. In each individual map sheet, priority barriers are symbolized using the following notation: 
 
-![Bulkley River watershed overview map identifying the portions of the watershed covered by each map sheet (grey squares) and the prioritized barriers on the intermediate barrier list (orange points; see Appendix C).](images/overview-map-bulk.png){#fig-over}
+![Bulkley River watershed overview map identifying the portions of the watershed covered by each map sheet (grey squares) and the prioritized barriers on the intermediate barrier list (orange points; [Supplementary Information](supplementary-information.qmd)
+).](images/overview-map-bulk.png){#fig-over}
 
 ## Connectivity Status Assessment Methods {-}
 
