@@ -83,7 +83,7 @@ Anadromous salmonids are cultural and ecological keystone species that contribut
 
 Anadromous salmonid populations in the Bulkley River watershed have declined significantly in recent decades, leading both the Gitxsan and Wet’suwet’en nations to declare harvest moratoriums or fishing bans in their territories (@OfficeWetsuweten2013, @Gitxsan2019). The stewardship of these resources in their territories are imbued in the spirit and culture of these nations through a symbiotic relationship with these fish species – threats to the fish are threats to the well-being of the Wet’suwet’en and Gitxsan peoples (@SSAF2021). The stewardship of their waters continues through the work of the [Gitksan Watershed Authorities](https://gitksanwatershed.com/) and the [Wet’suwet’en Fisheries Program](http://www.wetsuweten.com/departments/fisheries-and-wildlife/), as well as collaborative initiatives like the Skeena Environment Stewardship Initiative. 
 
-For the purposes of this WCRP, anadromous salmonid populations are defined using Fisheries and Oceans Canada's Conservation Units. A Conservation Unit (CU) is a group of wild Pacific salmon sufficiently isolated from other groups that, if extirpated, is very unlikely to recolonize naturally within an acceptable timeframe, such as a human lifetime or a specified number of salmon generations. Conservation Units are not defined for Steelhead, as such there is no assessment information to provide for the Bulkley River watershed population. See Appendix A for maps of modelled anadromous salmonid spawning and rearing habitat in the Bulkley River watershed.
+For the purposes of this WCRP, anadromous salmonid populations are defined using Fisheries and Oceans Canada's Conservation Units. A Conservation Unit (CU) is a group of wild Pacific salmon sufficiently isolated from other groups that, if extirpated, is very unlikely to recolonize naturally within an acceptable timeframe, such as a human lifetime or a specified number of salmon generations. Conservation Units are not defined for Steelhead, as such there is no assessment information to provide for the Bulkley River watershed population. See [Data Downloads and Methods](data-methods.qmd) for maps of modelled anadromous salmonid spawning and rearing habitat in the Bulkley River watershed.
 
 ### Chinook Salmon | Ya’aa | Ggïs| Oncorhynchus tshawytscha  {-}
 ```{python echo=FALSE}
@@ -328,14 +328,14 @@ def condition(pct):
 #rating classifier
 def rating(threat, barrier):
     if threat == "extent":
-        if barrier == "DAM":
+        if barrier != "ROAD":
             pct = barrier_extent(barrier)[1]
             rating = condition(pct)
         elif barrier == "ROAD":
             pct = barrier_extent('ROAD, RESOURCE/OTHER')[1] + barrier_extent('ROAD, DEMOGRAPHIC')[1]
             rating = condition(pct)
     elif threat == "severity":
-        if barrier == "DAM":
+        if barrier != "ROAD":
             pct = barrier_severity(barrier)[2]
             rating = condition(pct)
         elif barrier == "ROAD":
@@ -343,16 +343,11 @@ def rating(threat, barrier):
             rating = condition(pct)
             
     return rating
-            
-
-        
-
-
-
+      
 
 df = pd.DataFrame({"Barrier Types":["Road-Stream Crossings","Rail-stream Crossings", "Natural Barriers","Lateral Barriers","Large Dams(>3m height)","Small Dams(<3m height)","Trail-stream Crossings"],
-                   "Extent":["High", "Low","Medium", "Medium","Low","Low","Medium"],
-                   "Severity":["Very High", "Low","Very High", "High","Very High","Very High","Medium"],
+                   "Extent":[rating("extent", "ROAD"), rating("extent", "RAIL"),"Medium", "Medium",rating("extent", "DAM"), rating("extent", "DAM"),rating("extent", "TRAIL")],
+                   "Severity":[rating("severity", "ROAD"), rating("severity", "RAIL"),"Very High", "High",rating("severity", "DAM"),rating("severity", "RAIL"),rating("severity", "TRAIL")],
                    "Irreversibility":["Medium", "Medium","Medium", "Medium","High","Medium","Low"],
                    "Overall Threat Rating:":["High", "High","Medium", "Medium","Low","Low","Low"]
                    }).style.set_properties(subset=["Overall Threat Rating:"], **{'font-weight': 'bold'})
