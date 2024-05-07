@@ -200,7 +200,7 @@ import numpy as np
 
 df = pd.DataFrame({"Goal #": [1,2],
                    "Goal": ["By 2031, the percent (%) of total linear spawning habitat accessible to anadromous salmonids will increase from 88% to 95% within the Bulkley River watershed (i.e., reconnect at least 102 km of spawning habitat).",
-                            "By 2031, the percent (%) of total linear rearing habitat accessible to anadromous salmonids will increase from 702% to 80% within the Bulkley River watershed (i.e., reconnect at least 503 km of rearing habitat). "]
+                            "By 2031, the percent (%) of total linear rearing habitat accessible to anadromous salmonids will increase from 72% to 80% within the Bulkley River watershed (i.e., reconnect at least 503 km of rearing habitat). "]
                     })
 
 data = df.style.hide().set_properties(**{'text-align': 'left'})
