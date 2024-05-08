@@ -67,7 +67,7 @@ def watershed_connectivity(habitat_type):
 
     connect_stat = result[0]['connectivity_status']
 
-    return str(round(connect_stat))
+    return str(round(connect_stat,2))
 
 num_dam = barrier_severity('DAM')[1]
 km_dam = barrier_extent('DAM')[0]
@@ -110,13 +110,20 @@ def highlighttab7(val):
     yellow = '#ffff00;'
     lgreen = '#92d050;'
     dgreen = '#03853e;'
+    
+    def is_float(value):
+        try:
+            float(value)
+            return True
+        except ValueError:
+            return False
 
     if val=="<50%" : color = red
     elif val[0:].isdigit() and int(val) < 50 : color = red
     elif val=="51-75%": color = yellow
     elif val[0:].isdigit() and (int(val) >= 51 and int(val) < 76) : color = lgreen 
     elif val=="76-90%"  : color = lgreen
-    elif val[0:].isdigit() and (int(val) >= 76 and int(val) < 90) : color = lgreen 
+    elif is_float(val) and (float(val) >= 76 and float(val) < 90) : color = lgreen 
     elif val ==">90%": color = dgreen
     elif val[0:].isdigit() and int(val) >= 90 : color = dgreen 
     elif val == "Current Status:" : return "font-weight: bold"
@@ -158,11 +165,18 @@ def highlighttab7b(val):
     yellow = '#ffff00;'
     lgreen = '#92d050;'
     dgreen = '#03853e;'
+    
+    def is_float(value):
+        try:
+            float(value)
+            return True
+        except ValueError:
+            return False
 
     if val=="<50%" : color = red
     elif val[0:].isdigit() and int(val) < 50 : color = red
     elif val=="51-75%": color = yellow
-    elif val[0:].isdigit() and (int(val) >= 51 and int(val) < 75) : color = yellow 
+    elif is_float(val) and (float(val) >= 51 and float(val) < 75) : color = yellow 
     elif val=="76–90%"  : color = lgreen
     elif val[0:].isdigit() and (int(val) >= 76 and int(val) < 90) : color = lgreen 
     elif val ==">90%": color = dgreen
@@ -199,8 +213,8 @@ import pandas as pd
 import numpy as np
 
 df = pd.DataFrame({"Goal #": [1,2],
-                   "Goal": ["By 2031, the percent (%) of total linear spawning habitat accessible to anadromous salmonids will increase from 88% to 95% within the Bulkley River watershed (i.e., reconnect at least 102 km of spawning habitat).",
-                            "By 2031, the percent (%) of total linear rearing habitat accessible to anadromous salmonids will increase from 72% to 80% within the Bulkley River watershed (i.e., reconnect at least 503 km of rearing habitat). "]
+                   "Goal": ["By 2031, the percent (%) of total linear spawning habitat accessible to anadromous salmonids will increase from 87.9% to 95% within the Bulkley River watershed (i.e., reconnect at least 89.59 km of spawning habitat).",
+                            "By 2031, the percent (%) of total linear rearing habitat accessible to anadromous salmonids will increase from 71.96% to 80% within the Bulkley River watershed (i.e., reconnect at least 168.29 km of rearing habitat). "]
                     })
 
 data = df.style.hide().set_properties(**{'text-align': 'left'})

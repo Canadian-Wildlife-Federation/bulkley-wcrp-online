@@ -56,7 +56,7 @@ def barrier_severity(barrier_type):
 
 def watershed_connectivity(habitat_type):
 
-    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass/functions/postgisftw.wcrp_habitat_connectivity_status/items.json?watershed_group_code=BULK&barrier_type=' + habitat_type
+    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass/functions/postgisftw.wcrp_habitat_connectivity_status/items.json?watershed_group_code=BULK&habitat_type=' + habitat_type
 
     response_api = requests.get(request)
     parse = response_api.text
@@ -66,7 +66,7 @@ def watershed_connectivity(habitat_type):
     all_habitat = result[0]['all_habitat']
     all_habitat_acc = result[0]['all_habitat_accessible']
 
-    return str(round(connect_stat)), all_habitat, all_habitat_acc
+    return str(round(connect_stat,2)), all_habitat, all_habitat_acc
 
 warnings.filterwarnings('ignore')
 
@@ -87,7 +87,7 @@ gain <- py$gain
 
 ## Bulkley River Watershed Barrier Prioritization Summary {-}
 
-The primary conservation outcome of the WCRP is the remediation of barriers to connectivity in the Bulkley River watershed. To achieve Goals 1 and 2 in this plan, it is necessary to prioritize and identify a suite of barriers that, if remediated, will provide access to a minimum of 86 km of spawning habitat and 211 km of rearing habitat (@tbl-table16):
+The primary conservation outcome of the WCRP is the remediation of barriers to connectivity in the Bulkley River watershed. To achieve Goals 1 and 2 in this plan, it is necessary to prioritize and identify a suite of barriers that, if remediated, will provide access to a minimum of 89.59 km of spawning habitat and 168.29 km of rearing habitat (@tbl-table16):
 
 
 ```{python echo=FALSE}
@@ -103,16 +103,24 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-total = watershed_connectivity("ALL")[1] #total km in BULK
-access = watershed_connectivity("ALL")[2]
-gain = round((total*0.95)-access,2)
+#total = watershed_connectivity("ALL")[1] #total km in BULK
+#access = watershed_connectivity("ALL")[2]
+#gain = round((total*0.95)-access,2)
+
+total_spawn = watershed_connectivity("SPAWNING")[1] #total km in BULK
+access_spawn = watershed_connectivity("SPAWNING")[2]
+gain_spawn = (total_spawn*0.95)-access_spawn
+
+total_rear = round(watershed_connectivity("REARING")[1],2) #total km in BULK
+access_rear = round(watershed_connectivity("REARING")[2],2)
+gain_rear = round((total_rear*0.8)-access_rear,2)
 
 df = pd.DataFrame({"Habitat Type":["Spawning","Rearing"],
-                   "Currently accessible (km)":["1099.83 ","1499.29"],
-                   "Total": ["1248.20 ","2137.68"],
-                   "Current Connectivity Status":[str(watershed_connectivity("ALL")[0])+"%","70%"],
-                   "Goal": ["80%","70%"],
-                   "Gain required (km)": ["86","211"]
+                   "Currently accessible (km)":[round(access_spawn,2),access_rear],
+                   "Total": [round(total_spawn,2),total_rear],
+                   "Current Connectivity Status":[str(watershed_connectivity("SPAWNING")[0])+"%",str(watershed_connectivity("REARING")[0])+"%"],
+                   "Goal": ["95%","80%"],
+                   "Gain required (km)": [round(gain_spawn,2),gain_rear]
                    })
 
 data = df.style.hide().set_properties(**{'text-align': 'left'})
