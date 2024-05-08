@@ -56,7 +56,7 @@ def barrier_severity(barrier_type):
 
 def watershed_connectivity(habitat_type):
 
-    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass/functions/postgisftw.wcrp_habitat_connectivity_status/items.json?watershed_group_code=BULK&habitat_type=' + habitat_type
+    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass/functions/postgisftw.wcrp_habitat_connectivity_status/items.json?watershed_group_code=BULK&barrier_type=' + habitat_type
 
     response_api = requests.get(request)
     parse = response_api.text
@@ -108,11 +108,11 @@ access = watershed_connectivity("ALL")[2]
 gain = round((total*0.95)-access,2)
 
 df = pd.DataFrame({"Habitat Type":["Spawning","Rearing"],
-                   "Currently accessible (km)":[str(watershed_connectivity("SPAWNING")[2]),str(watershed_connectivity("REARING")[2])],
-                   "Total": [str(watershed_connectivity("SPAWNING")[1]),str(watershed_connectivity("REARING")[1])],
-                   "Current Connectivity Status":[str(watershed_connectivity("SPAWNING")[0])+"%",str(watershed_connectivity("REARING")[0])+"%"],
-                   "Goal": ["95%","80%"],
-                   "Gain required (km)": [round((watershed_connectivity("SPAWNING")[1]*0.96)-watershed_connectivity("SPAWNING")[2],2),round((watershed_connectivity("REARING")[1]*0.96)-watershed_connectivity("REARING")[2],2)]
+                   "Currently accessible (km)":["1099.83 ","1499.29"],
+                   "Total": ["1248.20 ","2137.68"],
+                   "Current Connectivity Status":[str(watershed_connectivity("ALL")[0])+"%","70%"],
+                   "Goal": ["80%","70%"],
+                   "Gain required (km)": ["86","211"]
                    })
 
 data = df.style.hide().set_properties(**{'text-align': 'left'})
@@ -163,7 +163,7 @@ ft |> autofit()
 library("flextable")
 
 data <- read.csv("data/intermediate-barriers.csv", check.names=FALSE)
-inter_num <- length(data)
+prior_num <- length(data)
 ft <- flextable(data) |> colformat_num(big.mark = "", decimal.mark = ".", digits = 2) 
 ft <- bg(ft, bg = "#008270", part = "header")
 ft <- color(ft, color = "white", part = "header")
@@ -172,6 +172,7 @@ ft <- align_text_col(ft, align = "left", header = TRUE)
 ft <- align_nottext_col(ft, align = "left", header = TRUE)
 ft |> autofit() 
 ```
+
 
 ```{r priority, echo = FALSE, results = 'asis'}
 #| label: tbl-priority
@@ -192,3 +193,42 @@ ft <- align_nottext_col(ft, align = "left", header = TRUE)
 ft |> autofit() 
 ```
 
+Thirty barriers on the intermediate list require short-term field assessments before selection as a final barrier to pursue for remediation: 
+
+```{r fieldreq, echo = FALSE, results = 'asis'}
+#| label: tbl-fieldreq
+#| tbl-cap: "Field assessment requirements for the intermediate barrier list in the Bulkley River watershed. The cost per barrier values are estimates based on previously completed field work. The habitat confirmation count is based on the assumption that the 23 barriers requiring barrier assessments will also require a subsequent confirmation. In the case that some barriers are identified as unsuitable candidates for habitat confirmations, the total cost will be reduced."
+#| warning: false
+#| echo: false
+
+library("flextable")
+
+data <- read.csv("data/field-reqs.csv", check.names=FALSE)
+ft <- flextable(data) 
+ft <- bg(ft, bg = "#008270", part = "header")
+ft <- color(ft, color = "white", part = "header")
+ft <- set_caption(ft)
+ft <- align_text_col(ft, align = "left", header = TRUE)
+ft <- align_nottext_col(ft, align = "left", header = TRUE)
+ft |> autofit() 
+```
+
+Based on the results of the prioritization analysis, 30 barriers from the intermediate barrier list are required to be remediated to achieve the connectivity goals in this plan:
+
+```{r remcost, echo = FALSE, results = 'asis'}
+#| label: tbl-remcost
+#| tbl-cap: "Preliminary barrier remediation cost estimate to reach connectivity goals in the Bulkley River watershed. Cost per barrier values are estimated based on the average cost of previously completed projects. Barrier counts and total costs are subject to change as more information is collected through the implementation of this plan."
+#| warning: false
+#| echo: false
+
+library("flextable")
+
+data <- read.csv("data/remediation-cost.csv", check.names=FALSE)
+ft <- flextable(data)
+ft <- bg(ft, bg = "#008270", part = "header")
+ft <- color(ft, color = "white", part = "header")
+ft <- set_caption(ft)
+ft <- align_text_col(ft, align = "left", header = TRUE)
+ft <- align_nottext_col(ft, align = "left", header = TRUE)
+ft |> autofit() 
+```
