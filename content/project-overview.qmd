@@ -1,3 +1,8 @@
+```{python echo=FALSE}
+import python.api_calls as api
+```
+
+
 # Project Overview {-} 
 
 ## Connectivity Plan Purpose and Approach {-}
@@ -231,76 +236,43 @@ The following table highlights which barrier types pose the greatest threat to a
 #| echo: false
 #| warning: false
 
-import requests
-import json
-import pandas
+num_dam = api.barrier_severity('DAM')[1]
+km_dam = api.barrier_extent('DAM')[0]
+pct_dam = api.barrier_extent('DAM')[1]
+resource_km = api.barrier_extent('ROAD, RESOURCE/OTHER')[0]
+resource_pct = round(api.barrier_extent('ROAD, RESOURCE/OTHER')[1])
+demo_km = api.barrier_extent('ROAD, DEMOGRAPHIC')[0]
+demo_pct = round(api.barrier_extent('ROAD, DEMOGRAPHIC')[1])
+resource_sev = round(api.barrier_severity('ROAD, RESOURCE/OTHER')[2])
+demo_sev = round(api.barrier_severity('ROAD, DEMOGRAPHIC')[2])
+sum_road = api.barrier_severity('ROAD, RESOURCE/OTHER')[1] + api.barrier_severity('ROAD, DEMOGRAPHIC')[1]
+sum_rail = api.barrier_severity('RAIL')[1]
+rail_km = api.barrier_extent('RAIL')[0]
+rail_pct = round(api.barrier_extent('RAIL')[1])
+rail_sev = round(api.barrier_severity('RAIL')[2])
+```
 
-def barrier_extent(barrier_type):
+```{r echo=FALSE}
+#| echo: false
+#| include: true
+#| warning: false
 
-    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass/functions/postgisftw.wcrp_barrier_extent/items.json?watershed_group_code=BULK&barrier_type=' + barrier_type
+library(reticulate)
 
-    response_api = requests.get(request)
-    parse = response_api.text
-    result = json.loads(parse)
-
-    blocked_km = result[0]['all_habitat_blocked_km']
-    blocked_pct = result[0]['extent_pct']
-
-    return blocked_km, blocked_pct
-
-def barrier_count(barrier_type):
-    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass/functions/postgisftw.wcrp_barrier_count/items.json?watershed_group_code=BULK&barrier_type=' + barrier_type
-
-    response_api = requests.get(request)
-    parse = response_api.text
-    result = json.loads(parse)
-
-    n_passable = result[0]['n_passable']
-    n_barrier = result[0]['n_barrier']
-    n_potential = result[0]['n_potential']
-    n_unknown = result[0]['n_unknown']
-
-    sum_bar = (n_passable, n_barrier, n_potential, n_unknown)
-
-    return n_passable, n_barrier, n_potential, n_unknown, sum(sum_bar)
-
-def barrier_severity(barrier_type):
-
-    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass/functions/postgisftw.wcrp_barrier_severity/items.json?watershed_group_code=BULK&barrier_type=' + barrier_type
-
-    response_api = requests.get(request)
-    parse = response_api.text
-    result = json.loads(parse)
-
-    n_assessed_barrier = result[0]['n_assessed_barrier']
-    n_assess_total = result[0]['n_assess_total']
-    pct_assessed_barrier = result[0]['pct_assessed_barrier']
-
-    return n_assessed_barrier, n_assess_total, pct_assessed_barrier
-
-def watershed_connectivity(habitat_type):
-
-    request = 'https://cabd-pro.cwf-fcf.org/bcfishpass/functions/postgisftw.wcrp_habitat_connectivity_status/items.json?watershed_group_code=BULK&barrier_type=' + habitat_type
-
-    response_api = requests.get(request)
-    parse = response_api.text
-    result = json.loads(parse)
-
-    connect_stat = result[0]['connectivity_status']
-
-    return str(round(connect_stat))
-
-num_dam = barrier_severity('DAM')[1]
-km_dam = barrier_extent('DAM')[0]
-pct_dam = barrier_extent('DAM')[1]
-resource_km = barrier_extent('ROAD, RESOURCE/OTHER')[0]
-resource_pct = round(barrier_extent('ROAD, RESOURCE/OTHER')[1])
-demo_km = barrier_extent('ROAD, DEMOGRAPHIC')[0]
-demo_pct = round(barrier_extent('ROAD, DEMOGRAPHIC')[1])
-resource_sev = round(barrier_severity('ROAD, RESOURCE/OTHER')[2])
-demo_sev = round(barrier_severity('ROAD, DEMOGRAPHIC')[2])
-sum_road = barrier_severity('ROAD, RESOURCE/OTHER')[1] + barrier_severity('ROAD, DEMOGRAPHIC')[1]
-
+num_dam <- py$num_dam
+km_dam <- py$km_dam
+pct_dam <- py$pct_dam
+resource_km <- py$resource_km
+resource_pct <- py$resource_pct
+demo_km <- py$demo_km
+demo_pct <- py$demo_pct
+resource_sev <- py$resource_sev
+demo_sev <- py$demo_sev
+sum_road <- py$sum_road
+sum_rail <- py$sum_rail
+rail_km <- py$rail_km
+rail_pct <- py$rail_pct
+rail_sev <- py$rail_sev
 ```
 
 
@@ -384,11 +356,11 @@ data.set_table_styles(
 
 ### Road-stream Crossings {-}
 
-Road-stream crossings are the most abundant barrier type in the watershed, with over 3,000 assessed and modelled crossings located on “potentially accessible” stream segments. Demographic road crossings (highways, municipal, and paved roads) block 241.89 km of habitat (37.44% of the total blocked habitat), with 81% of assessed crossings having been identified as barriers to fish passage. Resource roads block 357.44 km of habitat (55.33%), with 61% of assessed crossings have been identified as barriers. Significant land use and linear development throughout the valley bottom has disconnected the Bulkley River from important habitat in many tributaries, including Highway 16 which represents one of the main drivers of fragmentation in the watershed (see @tbl-table16). The collective experience and input from the planning team resulted in a Medium irreversibility rating due to the technical complexity and resources required to remediate road-stream crossings, though it was noted that this differs considerably between resource roads and highway crossings.
+Road-stream crossings are the most abundant barrier type in the watershed, with `r sum_road` assessed and modelled crossings located on stream segments with modelled habitat. Demographic road crossings (highways, municipal, and paved roads) block `r demo_km` of habitat (`r demo_pct`% of the total blocked habitat), with `r demo_sev`% of assessed crossings having been identified as barriers to fish passage. Resource roads block `r resource_km` km of habitat (`r resource_pct`%), with `r resource_sev`% of assessed crossings have been identified as barriers. Significant land use and linear development throughout the valley bottom has disconnected the Bulkley River from important habitat in many tributaries, including Highway 16 which represents one of the main drivers of fragmentation in the watershed (see @tbl-table16). The collective experience and input from the planning team resulted in a Medium irreversibility rating due to the technical complexity and resources required to remediate road-stream crossings, though it was noted that this differs considerably between resource roads and highway crossings.
 
 ### Rail-stream crossings{-}
 
-There are relatively few rail-stream crossings in the watershed (126 crossings on "potentially accessible" streams), but those that exist block significant amounts of habitat (36.04 km or 5.7% of the total habitat blocked), with more than half of assessed crossings (57.9%) acting as barriers to anadromous salmonids. All rail-stream crossings in the watershed are associated with the Canadian National (CN) railway running along the Bulkley River. With significant financial costs, technical challenges, and stakeholder engagement required with CN to remediate these barriers, the planning team decided on an overall pressure rating of High for this barrier type.
+There are relatively few rail-stream crossings in the watershed (`r sum_rail` crossings on "potentially accessible" streams), but those that exist block significant amounts of habitat (`r rail_km` km or `r rail_pct`% of the total habitat blocked), with more than half of assessed crossings (`r rail_sev`%) acting as barriers to anadromous salmonids. All rail-stream crossings in the watershed are associated with the Canadian National (CN) railway running along the Bulkley River. With significant financial costs, technical challenges, and stakeholder engagement required with CN to remediate these barriers, the planning team decided on an overall pressure rating of High for this barrier type.
 
 ### Lateral Barriers{-}
 
@@ -400,7 +372,7 @@ Natural barriers to fish passage can include debris flows, log jams, sediment de
 
 ### Large Dams (>3m height) and Small Dams (<3m height) {-}
 
-There are 24 mapped large and small dams on “potentially accessible” stream segments in the watershed, blocking 10.65 km (1.6% of the total blocked habitat) of modelled spawning and rearing habitat, resulting in a Low extent. The extent rating of these structures was confirmed by the planning team. There is only one known fish passage structure in the watershed and the remaining dams likely block passage for anadromous salmonids. Remediating these dams will require significant resources; however, due to the Low extent of dams in the watershed, a final pressure rating of Low was assigned.
+There are `r num_dam` mapped large and small dams on “potentially accessible” stream segments in the watershed, blocking `r km_dam` km (`r pct_dam`% of the total blocked habitat) of modelled spawning and rearing habitat, resulting in a Low extent. The extent rating of these structures was confirmed by the planning team. There is only one known fish passage structure in the watershed and the remaining dams likely block passage for anadromous salmonids. Remediating these dams will require significant resources; however, due to the Low extent of dams in the watershed, a final pressure rating of Low was assigned.
 
 ### Trail-stream crossings {-}
 
