@@ -4,7 +4,7 @@ import warnings
 import pandas as pd
 import numpy as np
 import python.api_calls as api
-import matplotlib as mpl
+import python.connectivity_assess as conn_table
 
 warnings.filterwarnings('ignore')
 ```
@@ -24,45 +24,9 @@ The current connectivity status assessment relies on GIS analyses to map known a
 #| warning: false
 #| echo: false
 
-import pandas as pd
-import numpy as np
-import matplotlib as mpl
-import warnings
+df = conn_table.make_assess_table("Andromous Salmon", "Available Spawning Habitat", "% of total spawning habitat", 50, 75, 90, api.connect_spawn)
+df
 
-warnings.filterwarnings('ignore')
-
-df = pd.DataFrame({"Target Species":["Andromous Salmon"," "],
-                   "KEA":["Available Spawning Habitat"," "],
-                   "Indicator":["% of total spawning habitat","Current Status:"],
-                   "Poor":["<50%"," "],
-                   "Fair":["51-75%"," "],
-                   "Good":["76-90%", api.watershed_connectivity("SPAWNING")[0]],
-                   "Very Good":[">90%"," "]  # watershed_connectivity("ALL")]
-                   })
-
-
-def highlighttab7(val):
-    red = '#ff0000;'
-    yellow = '#ffff00;'
-    lgreen = '#92d050;'
-    dgreen = '#03853e;'
-
-    if val=="<50%" : color = red
-    elif val[0:].isdigit() and int(val) < 50 : color = red
-    elif val=="51-75%": color = yellow
-    elif val=="76-90%"  : color = lgreen
-    elif val[0:].isdigit() and (int(val) >= 76 and int(val) < 90) : color = lgreen 
-    elif val ==">90%": color = dgreen
-    elif val[0:].isdigit() and int(val) >= 90 : color = dgreen 
-    elif val == "Current Status:" : return "font-weight: bold"
-    else: color = 'white'
-    return 'background-color: %s' % color
-
-df.style.applymap(highlighttab7).set_table_styles(
-   [{
-       'selector': 'th',
-       'props': [('background-color', '#008270'),('text-align', 'left')]
-   }]).hide()
 ```
 
 **Comments:** Indicator rating definitions are based on the consensus decisions of the planning team. The current status is based on the CWF Barrier Prioritization Model output, which is current as of October 2022.
@@ -71,46 +35,8 @@ df.style.applymap(highlighttab7).set_table_styles(
 #| warning: false
 #| echo: false
 
-#creating table 7
-import pandas as pd
-import numpy as np
-import matplotlib as mpl
-
-
-warnings.filterwarnings('ignore')
-
-df = pd.DataFrame({"Target Species":["Andromous Salmon",""],
-                   "KEA":["Available Rearing Habitat",""],
-                   "Indicator":["% of total rearing habitat","Current Status:"],
-                   "Poor":["<50%"," "],
-                   "Fair":["51-75%", api.watershed_connectivity("REARING")[0]],
-                   "Good":["76–90%"," "],
-                   "Very Good":[">90%"," "]
-                   })
-
-def highlighttab7b(val):
-    red = '#ff0000;'
-    yellow = '#ffff00;'
-    lgreen = '#92d050;'
-    dgreen = '#03853e;'
-
-    if val=="<50%" : color = red
-    elif val[0:].isdigit() and int(val) < 50 : color = red
-    elif val=="51-75%": color = yellow
-    elif val[0:].isdigit() and (int(val) >= 51 and int(val) < 75) : color = yellow 
-    elif val=="76–90%"  : color = lgreen
-    elif val[0:].isdigit() and (int(val) >= 76 and int(val) < 90) : color = lgreen 
-    elif val ==">90%": color = dgreen
-    elif val[0:].isdigit() and int(val) >= 90 : color = dgreen 
-    elif val == "Current Status:" : return "font-weight: bold"
-    else: color = 'white'
-    return 'background-color: %s' % color
-
-df.style.applymap(highlighttab7b).set_table_styles(
-   [{
-       'selector': 'th',
-       'props': [('background-color', '#008270'),('text-align', 'left')]
-   }]).hide()
+df = conn_table.make_assess_table("Andromous Salmon", "Available Rearing Habitat", "% of total rearing habitat", 50, 75, 90, api.connect_rear)
+df
 
 
 ```

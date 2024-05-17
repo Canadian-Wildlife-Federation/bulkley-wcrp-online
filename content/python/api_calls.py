@@ -60,18 +60,36 @@ def watershed_connectivity(habitat_type):
     all_habitat = result[0]['all_habitat']
     all_habitat_acc = result[0]['all_habitat_accessible']
 
-    return str(round(connect_stat)), all_habitat, all_habitat_acc
+    return round(connect_stat), all_habitat, all_habitat_acc
 
 warnings.filterwarnings('ignore')
 
+connect = watershed_connectivity("ALL")[0]
 total = watershed_connectivity("ALL")[1] #total km in BULK
 access = watershed_connectivity("ALL")[2]
 gain = round((total*0.96)-access,2)
 
+connect_spawn = watershed_connectivity("SPAWNING")[0]
 total_spawn = watershed_connectivity("SPAWNING")[1] #total km in BULK
 access_spawn = watershed_connectivity("SPAWNING")[2]
 gain_spawn = round((total_spawn*0.96)-access_spawn,2)
 
+connect_rear = watershed_connectivity("REARING")[0]
 total_rear = watershed_connectivity("REARING")[1] #total km in BULK
 access_rear = watershed_connectivity("REARING")[2]
 gain_rear = round((total_rear*0.96)-access_rear,2)
+
+num_dam = barrier_severity('DAM')[1]
+km_dam = barrier_extent('DAM')[0]
+pct_dam = barrier_extent('DAM')[1]
+resource_km = barrier_extent('ROAD, RESOURCE/OTHER')[0]
+resource_pct = round(barrier_extent('ROAD, RESOURCE/OTHER')[1])
+demo_km = barrier_extent('ROAD, DEMOGRAPHIC')[0]
+demo_pct = round(barrier_extent('ROAD, DEMOGRAPHIC')[1])
+resource_sev = round(barrier_severity('ROAD, RESOURCE/OTHER')[2])
+demo_sev = round(barrier_severity('ROAD, DEMOGRAPHIC')[2])
+sum_road = barrier_severity('ROAD, RESOURCE/OTHER')[1] + barrier_severity('ROAD, DEMOGRAPHIC')[1]
+sum_rail = barrier_severity('RAIL')[1]
+rail_km = barrier_extent('RAIL')[0]
+rail_pct = round(barrier_extent('RAIL')[1])
+rail_sev = round(barrier_severity('RAIL')[2])

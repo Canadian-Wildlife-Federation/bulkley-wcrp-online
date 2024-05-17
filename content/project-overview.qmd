@@ -1,7 +1,33 @@
 ```{python echo=FALSE}
 import python.api_calls as api
-```
+from ipywidgets import *
+import pandas as pd
+import warnings
 
+warnings.filterwarnings('ignore')
+```
+```{r setup, include=FALSE}
+#| echo: false
+#| warning: false
+
+library(reticulate)
+api <- import("python.api_calls")
+gain <- api$gain
+num_dam <- api$num_dam
+km_dam <- api$km_dam
+pct_dam <- api$pct_dam
+resource_km <- api$resource_km
+resource_pct <- api$resource_pct
+demo_km <- api$demo_km
+demo_pct <- api$demo_pct
+resource_sev <- api$resource_sev
+demo_sev <- api$demo_sev
+sum_road <- api$sum_road
+sum_rail <- api$sum_rail
+rail_km <- api$rail_km
+rail_pct <- api$rail_pct
+rail_sev <- api$rail_sev
+```
 
 # Project Overview {-} 
 
@@ -231,49 +257,6 @@ Steelhead migrations coincide with the arrival of Coho Salmon in the watershed a
 ## Barrier Types {-}
 
 The following table highlights which barrier types pose the greatest threat to anadromous salmon in the watershed. The results of this assessment were used to inform the subsequent planning steps, as well as to identify knowledge gaps where there is little spatial data to inform the assessment for a specific barrier type. 
-
-```{python}
-#| echo: false
-#| warning: false
-
-num_dam = api.barrier_severity('DAM')[1]
-km_dam = api.barrier_extent('DAM')[0]
-pct_dam = api.barrier_extent('DAM')[1]
-resource_km = api.barrier_extent('ROAD, RESOURCE/OTHER')[0]
-resource_pct = round(api.barrier_extent('ROAD, RESOURCE/OTHER')[1])
-demo_km = api.barrier_extent('ROAD, DEMOGRAPHIC')[0]
-demo_pct = round(api.barrier_extent('ROAD, DEMOGRAPHIC')[1])
-resource_sev = round(api.barrier_severity('ROAD, RESOURCE/OTHER')[2])
-demo_sev = round(api.barrier_severity('ROAD, DEMOGRAPHIC')[2])
-sum_road = api.barrier_severity('ROAD, RESOURCE/OTHER')[1] + api.barrier_severity('ROAD, DEMOGRAPHIC')[1]
-sum_rail = api.barrier_severity('RAIL')[1]
-rail_km = api.barrier_extent('RAIL')[0]
-rail_pct = round(api.barrier_extent('RAIL')[1])
-rail_sev = round(api.barrier_severity('RAIL')[2])
-```
-
-```{r echo=FALSE}
-#| echo: false
-#| include: true
-#| warning: false
-
-library(reticulate)
-
-num_dam <- py$num_dam
-km_dam <- py$km_dam
-pct_dam <- py$pct_dam
-resource_km <- py$resource_km
-resource_pct <- py$resource_pct
-demo_km <- py$demo_km
-demo_pct <- py$demo_pct
-resource_sev <- py$resource_sev
-demo_sev <- py$demo_sev
-sum_road <- py$sum_road
-sum_rail <- py$sum_rail
-rail_km <- py$rail_km
-rail_pct <- py$rail_pct
-rail_sev <- py$rail_sev
-```
 
 
 ```{python barriertype, echo=FALSE}
