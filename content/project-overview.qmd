@@ -1,3 +1,34 @@
+```{python echo=FALSE}
+import python.api_calls as api
+from ipywidgets import *
+import pandas as pd
+import warnings
+
+warnings.filterwarnings('ignore')
+```
+```{r setup, include=FALSE}
+#| echo: false
+#| warning: false
+
+library(reticulate)
+api <- import("python.api_calls")
+gain <- api$gain
+num_dam <- api$num_dam
+km_dam <- api$km_dam
+pct_dam <- api$pct_dam
+resource_km <- api$resource_km
+resource_pct <- api$resource_pct
+demo_km <- api$demo_km
+demo_pct <- api$demo_pct
+resource_sev <- api$resource_sev
+demo_sev <- api$demo_sev
+sum_road <- api$sum_road
+sum_rail <- api$sum_rail
+rail_km <- api$rail_km
+rail_pct <- api$rail_pct
+rail_sev <- api$rail_sev
+```
+
 # Project Overview {-} 
 
 ## Connectivity Plan Purpose and Approach {-}
@@ -20,6 +51,7 @@ Connectivity is a critical component of freshwater ecosystems that encompasses a
 
 
 The primary geographic scope of this WCRP is the Bulkley River watershed, located in the mid-eastern portion of the Skeena River drainage basin in northwestern British Columbia (@fig-geoscope). The scope constitutes the Bulkley River "watershed group" as defined by the [British Columbia Freshwater Atlas](https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-watershed-groups) (FWA). A consistent spatial framework was necessary to undertake a watershed-selection process at the provincial scale to identify target watersheds to improve connectivity for salmonids. The Bulkley River watershed was identified by the BC Fish Passage Restoration Initiative as one of four target watersheds for WCRP development @Mazany-Wright2021-do. The Bulkley River watershed has a drainage area of 776,200 ha, spanning from Bulkley Lake in the southeast to the confluence with the Skeena River in the northwest. The watershed is generally divided into the "lower" Bulkley River and the "upper" Bulkley River by the confluence with the Morice River near the town of Houston. Culturally and economically important populations of Chinook Salmon (Oncorhynchus tshawytscha), Coho Salmon (Oncorhynchus kisutch), Sockeye Salmon (Oncorhynchus nerka), and Steelhead (Oncorhynchus mykiss) are all found in the watershed, which historically supported Indigenous sustenance and trading economies (@tbl-spn; @Irvine2021). 
+
 
 ```{python echo=FALSE}
 #| label: tbl-spn
@@ -86,6 +118,8 @@ Anadromous salmonid populations in the Bulkley River watershed have declined sig
 For the purposes of this WCRP, anadromous salmonid populations are defined using Fisheries and Oceans Canada's Conservation Units. A Conservation Unit (CU) is a group of wild Pacific salmon sufficiently isolated from other groups that, if extirpated, is very unlikely to recolonize naturally within an acceptable timeframe, such as a human lifetime or a specified number of salmon generations. Conservation Units are not defined for Steelhead, as such there is no assessment information to provide for the Bulkley River watershed population. See [Data Downloads and Methods](data-methods.qmd) for maps of modelled anadromous salmonid spawning and rearing habitat in the Bulkley River watershed.
 
 ### Chinook Salmon | Ya’aa | Ggïs| Oncorhynchus tshawytscha  {-}
+
+`{\tiny`{=latex}
 ```{python echo=FALSE}
 #| label: tbl-spn2
 #| tbl-cap: "Chinook Salmon Conservation Units assessments in the Bulkley River watershed. Assessments undertaken by [the Pacific Salmon Foundation (2020)](https://www.salmonexplorer.ca/#!/pop=ABUNDANCE_TREND)."
@@ -125,14 +159,14 @@ data.set_table_styles(
    }])
 
 ```
-
+`}`{=latex}
 
 The Middle Skeena – Mainstem Tributaries Chinook Salmon spawn in the mainstem Bulkley River (downstream of the confluence with the Morice River) and in key tributaries, including Telkwa River, Goathorn Creek, Howson Creek, Kathlyn Creek, Suskwa River, Harold Price Creek, and Natlan Creek. The Middle Skeena Chinook Salmon stocks have seen a decline in recent years, particularly over the last three generations of spawners [Pacific Salmon Explorer](https://www.salmonexplorer.ca/#!/pop=ABUNDANCE_TREND).
 The upper Bulkley River Chinook Salmon (upstream of the confluence with the Morice River) are the first salmon to return in the year, usually early-to-mid June, marking the start of the salmon fishery in the watershed @OfficeWetsuweten2013. The upper Bulkley River population is known to spawn in the mainstem and tributaries of the Bulkley River, including Buck Creek, Byman Creek, Richfield Creek, Maxan Creek, and Foxy Creek. In some years, low water flows prevent adult Chinook Salmon from migrating past Bulkley Falls. The upper Bulkley Chinook Salmon stocks have been observed to be in decline and are threatened, in part, by habitat degradation, including linear development (e.g., highway, rail, and road infrastructure) that fragments tributaries (@OfficeWetsuweten2013, [Pacific Salmon Explorer](https://www.salmonexplorer.ca/#!/pop=ABUNDANCE_TREND)).
 
 
 ### Coho Salmon | Eek | Deedzex | Oncorhynchus kisutch {-}
-
+`{\footnotesize`{=latex}
 ```{python echo=FALSE}
 #| label: tbl-coho
 #| tbl-cap: "Coho Salmon Conservation Unit assessment in the Bulkley River Watershed. Assessments undertaken by [the Pacific Salmon Foundation (2020)](https://www.salmonexplorer.ca/#!/pop=ABUNDANCE_TREND)."
@@ -172,11 +206,12 @@ data.set_table_styles(
    }])
 
 ```
+`}`{=latex}
 
 Coho Salmon are the most widely dispersed anadromous salmonid species in the Bulkley River watershed due to their ability to move into smaller tributaries, including headwater streams. Coho Salmon spawning migration peaks in early-to-mid August, though traditionally the main Coho Salmon fishery occurs later in the season (@OfficeWetsuweten2013). Spawning and rearing of the Middle Skeena population is known to occur within the watershed in the mainstem channels of the Bulkley, Telkwa, and Suskwa Rivers, and key tributaries, including Buck Creek, Aitken Creek, McQuarrie Creek, Byman Creek, Richfield Creek, Ailport Creek, and Maxan Creek. In recent decades, Coho Salmon distribution has often been limited to areas downstream of Bulkley Falls, but in years with sufficient flow, tributaries upstream of the falls are well-used by rearing juveniles (M. Risdale pers. comm.). The Coho Salmon population in the watershed appeared to begin recovering around 1998 but has since declined over the last three generations of spawners (@OfficeWetsuweten2013, PSF 2014). Additionally, since 1989, tens of thousands of Coho Salmon fry have been released into the upper Bulkley River mainstem from the Toboggan Hatchery on Toboggan Creek (@OfficeWetsuweten2013).
 
 ### Sockeye Salmon | Mi’soo | Taalook | Oncorhynchus nerka {-}
-
+`{\footnotesize`{=latex}
 ```{python echo=FALSE}
 #| label: tbl-sock
 #| tbl-cap: "Sockeye Salmon Conservation Unit Assessments in the Bulkley River watershed. There were not enough data to support assessments for Sockeye Salmon populations at the time of analysis. Assessments undertaken by [the Pacific Salmon Foundation (2020)](https://www.salmonexplorer.ca/#!/pop=ABUNDANCE_TREND)."
@@ -227,6 +262,7 @@ Steelhead migrations coincide with the arrival of Coho Salmon in the watershed a
 
 The following table highlights which barrier types pose the greatest threat to anadromous salmon in the watershed. The results of this assessment were used to inform the subsequent planning steps, as well as to identify knowledge gaps where there is little spatial data to inform the assessment for a specific barrier type. 
 
+`{\footnotesize`{=latex}
 ```{python}
 #| echo: false
 #| warning: false
@@ -303,7 +339,7 @@ sum_road = barrier_severity('ROAD, RESOURCE/OTHER')[1] + barrier_severity('ROAD,
 
 ```
 
-
+`{\footnotesize`{=latex}
 ```{python barriertype, echo=FALSE}
 #| label: tbl-barriertype
 #| tbl-cap: "Barrier Types in the Bulkley River watershed and barrier rating assessment results. For each barrier type listed, Extent refers to the proportion of anadromous salmonid habitat that is being blocked by that barrier type, Severity is the proportion of structures for each barrier type that are known to block passage for target species based on field assessments, and Irreversibility is the degree to which the effects of a barrier type can be reversed and connectivity restored. The amount of habitat blocked used in this exercise is a representation of total amount of combined spawning and rearing habitat."
@@ -379,11 +415,11 @@ data.set_table_styles(
 
 ### Road-stream Crossings {-}
 
-Road-stream crossings are the most abundant barrier type in the watershed, with over 3,000 assessed and modelled crossings located on “potentially accessible” stream segments. Demographic road crossings (highways, municipal, and paved roads) block 241.89 km of habitat (37.44% of the total blocked habitat), with 81% of assessed crossings having been identified as barriers to fish passage. Resource roads block 357.44 km of habitat (55.33%), with 61% of assessed crossings have been identified as barriers. Significant land use and linear development throughout the valley bottom has disconnected the Bulkley River from important habitat in many tributaries, including Highway 16 which represents one of the main drivers of fragmentation in the watershed (see @tbl-table16). The collective experience and input from the planning team resulted in a Medium irreversibility rating due to the technical complexity and resources required to remediate road-stream crossings, though it was noted that this differs considerably between resource roads and highway crossings.
+Road-stream crossings are the most abundant barrier type in the watershed, with `r sum_road` assessed and modelled crossings located on stream segments with modelled habitat. Demographic road crossings (highways, municipal, and paved roads) block `r demo_km` of habitat (`r demo_pct`% of the total blocked habitat), with `r demo_sev`% of assessed crossings having been identified as barriers to fish passage. Resource roads block `r resource_km` km of habitat (`r resource_pct`%), with `r resource_sev`% of assessed crossings have been identified as barriers. Significant land use and linear development throughout the valley bottom has disconnected the Bulkley River from important habitat in many tributaries, including Highway 16 which represents one of the main drivers of fragmentation in the watershed (see @tbl-table16). The collective experience and input from the planning team resulted in a Medium irreversibility rating due to the technical complexity and resources required to remediate road-stream crossings, though it was noted that this differs considerably between resource roads and highway crossings.
 
 ### Rail-stream crossings{-}
 
-There are relatively few rail-stream crossings in the watershed (126 crossings on "potentially accessible" streams), but those that exist block significant amounts of habitat (36.04 km or 5.7% of the total habitat blocked), with more than half of assessed crossings (57.9%) acting as barriers to anadromous salmonids. All rail-stream crossings in the watershed are associated with the Canadian National (CN) railway running along the Bulkley River. With significant financial costs, technical challenges, and stakeholder engagement required with CN to remediate these barriers, the planning team decided on an overall pressure rating of High for this barrier type.
+There are relatively few rail-stream crossings in the watershed (`r sum_rail` crossings on "potentially accessible" streams), but those that exist block significant amounts of habitat (`r rail_km` km or `r rail_pct`% of the total habitat blocked), with more than half of assessed crossings (`r rail_sev`%) acting as barriers to anadromous salmonids. All rail-stream crossings in the watershed are associated with the Canadian National (CN) railway running along the Bulkley River. With significant financial costs, technical challenges, and stakeholder engagement required with CN to remediate these barriers, the planning team decided on an overall pressure rating of High for this barrier type.
 
 ### Lateral Barriers{-}
 
@@ -395,7 +431,7 @@ Natural barriers to fish passage can include debris flows, log jams, sediment de
 
 ### Large Dams (>3m height) and Small Dams (<3m height) {-}
 
-There are 24 mapped large and small dams on “potentially accessible” stream segments in the watershed, blocking 10.65 km (1.6% of the total blocked habitat) of modelled spawning and rearing habitat, resulting in a Low extent. The extent rating of these structures was confirmed by the planning team. There is only one known fish passage structure in the watershed and the remaining dams likely block passage for anadromous salmonids. Remediating these dams will require significant resources; however, due to the Low extent of dams in the watershed, a final pressure rating of Low was assigned.
+There are `r num_dam` mapped large and small dams on “potentially accessible” stream segments in the watershed, blocking `r km_dam` km (`r pct_dam`% of the total blocked habitat) of modelled spawning and rearing habitat, resulting in a Low extent. The extent rating of these structures was confirmed by the planning team. There is only one known fish passage structure in the watershed and the remaining dams likely block passage for anadromous salmonids. Remediating these dams will require significant resources; however, due to the Low extent of dams in the watershed, a final pressure rating of Low was assigned.
 
 ### Trail-stream crossings {-}
 
