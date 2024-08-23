@@ -31,7 +31,7 @@ rail_sev <- api$rail_sev
 
 # Project Overview {-} 
 
-## Connectivity Plan Purpose and Approach {-}
+## Plan Purpose, Approach, and Scope {-}
 
 The following Watershed Connectivity Remediation Plan (WCRP) represents the culmination of a one-year collaborative planning effort for the Bulkley River watershed (excluding the Morice River, see Project Scope), the overall aim of which is to clarify and reduce the threat of aquatic barriers to anadromous salmonids and the livelihoods that they support, including the values and laws of First Nations, as well their continued sustenance, cultural, and ceremonial needs both now and into the future. This 10-year plan was developed to identify priority actions that the Bulkley River WCRP planning team (see @tbl-planteam for a list of team members) will undertake between 2021-2031 to conserve and restore fish passage in the watershed through strategies aimed at barrier remediation, barrier prevention, and strengthening Indigenous connections to land and water.
 

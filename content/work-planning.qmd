@@ -65,12 +65,4 @@ data.set_table_styles(
    }])
 
 ```
-## Funding Sources {-}
-```{r fund, echo = FALSE, results = 'asis'}
-#| label: tbl-fund
-#| tbl-cap: "Potential funding sources for plan implementation in the Bulkley River watershed. The Canadian Wildlife Federation and the planning team can coordinate proposal submission through these sources."
-#| warning: false
-
-library("flextable")
-
-```
+## Annual Work Plan {-}
