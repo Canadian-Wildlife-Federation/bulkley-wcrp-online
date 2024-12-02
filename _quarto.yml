@@ -3,7 +3,7 @@ project:
   output-dir: _book
 
 book:
-  title: "Bulkley River Watershed Connectivity Remediation Plan: 2021 - 2031"
+  title: "Bulkley River Watershed Connectivity Restoration Plan: 2021 - 2031"
   author: "Canadian Wildlife Federation"
   date: last-modified
   date-format: "DD-MM-YYYY"
@@ -28,7 +28,7 @@ book:
       - icon: save
         menu: 
           - text: Word DOCX
-            url: _book/Bulkley-River-Watershed-Connectivity-Remediation-Plan--2021---2031.docx
+            url: _book/Bulkley-River-Watershed-Connectivity-Restoration-Plan--2021---2031.docx
 
 
 
