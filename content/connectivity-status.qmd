@@ -17,7 +17,7 @@ The planning team identified two Key Ecological Attributes (KEAs) to assess the 
 
 The current connectivity status was estimated using three spatial models:
 
-1.	Accessibility model: Naturally accessible waterbodies are those that are considered likely accessible to focal species if no human-made barriers existed on the landscape. These were spatially delineated for each focal species using natural barriers (i.e., waterfalls, gradient barriers, or subsurface flows) that would naturally limit upstream movement (Table XX).
+1.	Accessibility model: Naturally accessible waterbodies are those that are considered likely accessible to focal species if no human-made barriers existed on the landscape. These were spatially delineated for each focal species using natural barriers (i.e., waterfalls, gradient barriers, or subsurface flows) that would naturally limit upstream movement (@).
 
 2.	Habitat model: A subset of the naturally accessible waterbody layer was defined as key habitat, i.e., habitat likely to support spawning or rearing, rather than simply movement corridors. The habitat model identifies areas within waterbodies that have a higher potential to support key habitat based on stream channel gradient and discharge. The habitat model criteria can be found in (Table XX).
 
