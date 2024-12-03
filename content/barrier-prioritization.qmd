@@ -12,6 +12,8 @@ warnings.filterwarnings('ignore')
 library(reticulate)
 api <- import("python.api_calls")
 gain <- api$gain
+gain_spawn <- api$gain_spawn
+gain_rear <- api$gain_rear
 
 source("Rscripts/table_formatting.R")
 
@@ -20,7 +22,7 @@ source("Rscripts/table_formatting.R")
 # Structure Prioritization {-}
 
 ## Field Assessment Ranking Process {-}
-A primary outcome of the WCRP will be the rehabilitation of barriers to connectivity in the Bulkley River Watershed. To achieve the goals in this plan, it is necessary to identify a set of structures that, if rehabilitated, will provide access to a minimum of 86 km of spawning habitat and 211 km of rearing habitat (@tbl-table16):
+A primary outcome of the WCRP will be the rehabilitation of barriers to connectivity in the Bulkley River Watershed. To achieve the goals in this plan, it is necessary to identify a set of structures that, if rehabilitated, will provide access to a minimum of `r gain_spawn` km of spawning habitat and `r gain_rear` km of rearing habitat (@tbl-table16):
 
 ```{python echo=FALSE}
 #| label: tbl-table16
