@@ -37,12 +37,12 @@ gain = round((total*0.95)-access,2)
 connect_spawn = api.watershed_connectivity("SPAWNING")[0]
 total_spawn = round(api.watershed_connectivity("SPAWNING")[1],2) #total km in BULK
 access_spawn = round(api.watershed_connectivity("SPAWNING")[2],2)
-gain_spawn = round((total*0.95)-access,2)
+gain_spawn = round((total_spawn*0.95)-access_spawn,2)
 
 connect_rear = api.watershed_connectivity("REARING")[0]
 total_rear = round(api.watershed_connectivity("REARING")[1],2) #total km in BULK
 access_rear = round(api.watershed_connectivity("REARING")[2],2)
-gain_rear = round((total*0.95)-access,2)
+gain_rear = round((total_rear*0.80)-access_rear,2)
 
 # Data frame with table info
 df = pd.DataFrame({"Habitat Type":["Spawning","Rearing"],
