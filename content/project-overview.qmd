@@ -355,7 +355,7 @@ Natural barriers to fish passage can include debris flows, log jams, sediment de
 
 ### Large Dams (>3m height) and Small Dams (<3m height) {-}
 
-There are `r num_dam` mapped large and small dams on “potentially accessible” stream segments in the watershed, blocking `r km_dam` km (`r pct_dam`% of the total blocked habitat) of modelled spawning and rearing habitat, resulting in a Low extent. The extent rating of these structures was confirmed by the planning team. There is only one known fish passage structure in the watershed and the remaining dams likely block passage for anadromous salmonids. Remediating these dams will require significant resources; however, due to the Low extent of dams in the watershed, a final pressure rating of Low was assigned.
+There are `r num_dam` mapped large and small dams on naturally accessible waterbodies in the watershed, blocking `r km_dam` km (`r pct_dam`% of the total blocked habitat) of modelled spawning and rearing habitat, resulting in a Low extent. The extent rating of these structures was confirmed by the planning team. There is only one known fish passage structure in the watershed and the remaining dams likely block passage for anadromous salmonids. Remediating these dams will require significant resources; however, due to the Low extent of dams in the watershed, a final pressure rating of Low was assigned.
 
 ### Trail-stream crossings {-}
 
