@@ -83,3 +83,40 @@ Following field assessments, structures are placed on one of five possible lists
 4.	Non-actionable barriers list – the structure is confirmed to be a barrier to fish passage and have some amount/quality of habitat upstream, but the planning team will not identify actions to advance rehabilitation of the structure because of logistic considerations (e.g., financial costs), short habitat gain, or the upstream habitat is of poor quality or unsuitable in its present condition to support key life stages of the focal species [Appendix C](data-methods.qmd).
 
 5.	Excluded structures list – the structure is excluded from further consideration in subsequent ranking and work planning because the structure is confirmed passable (e.g., bridge), not present, or there is no key habitat upstream [Appendix C](data-methods.qmd).
+
+```{r rehab, echo = FALSE, results = 'asis'}
+#| label: tbl-confirmed
+#| tbl-cap: "Confirmed barriers"
+#| warning: false
+#| echo: false
+
+data <- read.csv("data/confirmed_barriers.csv", check.names=FALSE)
+ft <- flextable(data)
+ft <- format_flextable(ft)
+ft
+```
+
+```{r rehab, echo = FALSE, results = 'asis'}
+#| label: tbl-datadeficient
+#| tbl-cap: "Assessed structures that remain data deficient"
+#| warning: false
+#| echo: false
+
+data <- read.csv("data/assessed_strucDD.csv", check.names=FALSE)
+ft <- flextable(data)
+ft <- format_flextable(ft)
+ft
+```
+
+
+```{r rehab, echo = FALSE, results = 'asis'}
+#| label: tbl-rehabilitated
+#| tbl-cap: "Rehabilitated Structures"
+#| warning: false
+#| echo: false
+
+data <- read.csv("data/rehabilitated_barriers.csv", check.names=FALSE)
+ft <- flextable(data)
+ft <- format_flextable(ft)
+ft
+```
