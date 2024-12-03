@@ -2,7 +2,7 @@
 
 ## Annual Progress Update {-}
 
-One priority barrier in the Bulkley watershed was removed on McDowell Creek at Woodmere Nursery in summer 2023. This crossing was replaced with a clearspan bridge and opens up approximately 200 m of seasonal off-channel habitat for salmonids during periods of high flow. The Ministry of Transportation and Infrastructure has been working with local partners to advance designs for barriers on Trib to Buck Creek, Helps Creek, Thompson Creek and Gramophone Creek. The Office of the Wet’suwet’en has hired a part-time staff to help with fish passage coordination in the Bulkley watershed. In addition, efforts have been made by CWF and local partners to build a campaign around Station Creek, to convince the BC government to invest in an appropriate crossing at Highway 16.
+One priority barrier for rehabilitation in the Bulkley watershed was removed on McDowell Creek at Woodmere Nursery in summer 2023. This crossing was replaced with a clearspan bridge and opens up approximately 200 m of seasonal off-channel habitat for salmonids during periods of high flow. The Ministry of Transportation and Infrastructure has been working with local partners to advance designs for barriers on Trib to Buck Creek, Helps Creek, Thompson Creek and Gramophone Creek. The Office of the Wet’suwet’en has hired a part-time staff to help with fish passage coordination in the Bulkley watershed. In addition, efforts have been made by CWF and local partners to build a campaign around Station Creek, to convince the BC government to invest in an appropriate crossing at Highway 16.
 
 ## Annual Work Plan
 ```{r keyact, echo = FALSE, results = 'asis'}
