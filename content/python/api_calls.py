@@ -154,17 +154,17 @@ warnings.filterwarnings('ignore')
 connect = watershed_connectivity("ALL")[0]
 total = watershed_connectivity("ALL")[1] #total km in BULK
 access = watershed_connectivity("ALL")[2]
-gain = round((total*0.96)-access,2)
+gain = round((total*0.95)-access,2)
 
 connect_spawn = watershed_connectivity("SPAWNING")[0]
 total_spawn = watershed_connectivity("SPAWNING")[1] #total km in BULK
 access_spawn = watershed_connectivity("SPAWNING")[2]
-gain_spawn = round((total_spawn*0.96)-access_spawn,2)
+gain_spawn = round((total_spawn*0.95)-access_spawn,2)
 
 connect_rear = watershed_connectivity("REARING")[0]
 total_rear = watershed_connectivity("REARING")[1] #total km in BULK
 access_rear = watershed_connectivity("REARING")[2]
-gain_rear = round((total_rear*0.96)-access_rear,2)
+gain_rear = round((total_rear*0.80)-access_rear,2)
 
 num_dam = barrier_severity('DAM')[1]
 km_dam = barrier_extent('DAM')[0]
