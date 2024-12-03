@@ -1,3 +1,15 @@
+```{r}
+#| echo: false
+#| warning: false
+
+library(reticulate)
+api <- import("python.api_calls")
+gain <- api$gain
+
+source("Rscripts/table_formatting.R")
+
+```
+
 # Data Download and Methods {-}
 
 ## Data Download {-}
@@ -7,3 +19,29 @@ Coming soon.
 ## Connectivity Status Assessment Methods {-}
 
 Coming soon.
+
+## Other tables {-}
+
+```{r, echo = FALSE, results = 'asis'}
+#| label: tbl-nonaction
+#| tbl-cap: "Non-Actionable structres"
+#| warning: false
+
+
+data <- read.csv("data/nonactionable_barriers.csv", check.names=FALSE)
+ft <- flextable(data)
+ft <- format_flextable(ft)
+ft
+```
+
+```{r, echo = FALSE, results = 'asis'}
+#| label: tbl-excluded
+#| tbl-cap: "Excluded structures"
+#| warning: false
+
+
+data <- read.csv("data/excluded_structures.csv", check.names=FALSE)
+ft <- flextable(data)
+ft <- format_flextable(ft)
+ft
+```

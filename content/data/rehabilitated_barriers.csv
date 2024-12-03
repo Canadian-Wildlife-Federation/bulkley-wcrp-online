@@ -1,0 +1,5 @@
+barrier_id,modelled_crossing_id,watercourse_name,road_name,type_of_rehabilitation,rehabilitated_by,rehabilitated_date,total_hab_gain_set,actual_project_cost_$,next_steps,notes,supporting_links
+197912,1802106.0,Robert Hatch Creek,Unnamed,Removal/decommissioned,CWF/DFO,2022-01-01,,7500.0,Post-rehabilitation monitoring,,https://cwf-fcf.org/en/resources/downloads/pdf/2021-2022-Projects-Technical-Briefing.pdf
+197967,1800050.0,Taman Ceek,Highway 16,,,,14.459999999999999,,Post-rehabilitation monitoring,,
+58158,1800275.0,McDowell Creek,Highway 16,,,,4.89,,Post-rehabilitation monitoring,,https://www.newgraphenvironment.com/fish_passage_bulkley_2020_reporting/appendix---58159---mcdowell-creek.html
+58159,1802236.0,McDowell Creek,Unnamed,Replacement - OBS,CWF/Woodmere Nursery,2023-01-01,4.89,75700.0,N/A - project complete (rehabilitated structures only),,https://www.newgraphenvironment.com/fish_passage_bulkley_2020_reporting/appendix---58159---mcdowell-creek.html 
