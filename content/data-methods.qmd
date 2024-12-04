@@ -37,35 +37,6 @@ ft |> autofit()
 
 [References: [1] @Busch2011-uy. [2] @Cooney2006-qf. [3] @Bjornn1991-zd. [4] @Neuman1977-wg. [5] @Woll2017-vf. [6] @Roberge2002-xq. [7] @Raleigh1986-cn. [8] @Porter2008-qd. [9] @Agrawal2005-xu. [10] @Sloat2017-bp. [11] @Mcmahon1983-rz. [12] @Rosenfeld2000-vq. [13] @Burnett2007-yv. [14] @Lake1999-tl. [15] @Hoopes1972.]{style="color: grey"}
 
-
-```{python paramstest, echo=FALSE}
-#| label: tbl-paramstest
-#| tbl-cap: "Parameters and thresholds used to inform the Intrinsic Potential habitat model for spawning and rearing habitat for each focal species in the Bulkley River watershed."
-#| warning: false
-#| echo: false
-
-#from IPython.display import display
-#import pandas as pd
-#import numpy as np
-
-#data = pd.read_csv('data/params-bulkley.csv', index_col=False)
-
-#data = data.replace(np.nan, '', regex=True)
-
-#rows = pd.IndexSlice[[1,3,5], :]
-
-#def df_operation(rows):
-  #  return "background-color: white; color: grey"
-
-#data = data.style.applymap(df_operation, subset=rows).hide().set_properties(**{'text-align': 'left'})
-#data.set_table_styles(
-#   [{
-  #     'selector': 'th',
-  #     'props': [('background-color', '#008270'),('text-align', 'left')]
-  # }])
-
-```
-
 ## Other tables {-}
 
 ```{r, echo = FALSE, results = 'asis'}
@@ -79,6 +50,7 @@ ft <- flextable(data)
 ft <- format_flextable(ft)
 ft
 ```
+
 
 ```{r, echo = FALSE, results = 'asis'}
 #| label: tbl-excluded
