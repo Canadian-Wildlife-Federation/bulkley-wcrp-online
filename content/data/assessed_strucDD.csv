@@ -1,4 +1,4 @@
-barrier_id,modelled_crossing_id,watercourse_name,road_name,structure_type,structure_owner,barrier_status,partial_passability,assessment_type_completed,total_hab_gain_set,num_barriers_set,next_steps,notes,supporting_links
+Barrier Id,Modelled Crossing Id,Watercourse Name,Road Name,Structure Type,Structure Owner,Barrier Status,Partial Passability,Assessment Type Completed,Total Hab Gain Set,Num Barriers Set,Next Steps,Notes,Supporting Links
 123392,1800104.0,Lemieux Creek,Quick School Road,Stream crossing - CBS,MOTI,POTENTIAL,,Barrier assessment,7.2299999999999995,2.0,Engage with partners,Recommend adding to excluded structures list,
 123393,1800265.0,Lemieux Creek,Highway 16,Stream crossing - CBS,MOTI,BARRIER,,Barrier assessment,7.2299999999999995,2.0,Engage with partners,Recommend adding to excluded structures list. Or confirmed barrier end of life cycle?,
 123426,1800106.0,Robin Creek,Highway 16,Stream crossing - CBS,MOTI,POTENTIAL,,Barrier assessment,7.32,2.0,Engage with partners,,

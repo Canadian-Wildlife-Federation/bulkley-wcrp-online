@@ -1,4 +1,4 @@
-barrier_id,modelled_crossing_id,watercourse_name,road_name,structure_type,reason_for_exclusion,method_of_exclusion,reason,notes,supporting_links
+Barrier Id,Modelled Crossing Id,Watercourse Name,Road Name,Structure Type,Reason For Exclusion,Method Of Exclusion,Reason,Notes,Supporting Links
 1001800752,1800752.0,Tributary to Elwin Lake,Unnamed,Stream crossing - Ford,Passable,Imagery review,Ford visible on satellite imagery. Could not be reached in the field. ,,
 123776,24703647.0,Corya Creek,Highway 16,Stream crossing - OBS,Passable,Field assessment,"Bridge, fairly recent replacement",,
 197657,1800067.0,Perow Creek,Highway 16,Stream crossing - CBS,Passable,Field assessment,"Fully backwatered, scores as passable",,
