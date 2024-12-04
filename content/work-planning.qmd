@@ -23,65 +23,19 @@ ft
 
 ## Operational Plan {-}
 
-The operational plan represents a preliminary exercise undertaken by the planning team to identify the potential leads, potential participants, and estimated cost for the implementation of each action in the Bulkley River watershed. @tbl-opplan summarizes individuals, groups, or organizations that the planning team felt could lead or participate in the implementation of the plan and should be interpreted as the first step in on-going planning and engagement to develop more detailed and sophisticated action plans for each entry in the table. The individuals, groups, and organizations listed under the "Lead(s)" or "Potential Participants" columns are those that provisionally expressed interest in participating in one of those roles or were suggested by the planning team for further engagement (denoted in bold), for those that are not members of the planning team. The leads, participants, and estimated costs in the operational plan are not binding nor an official commitment of resources, but rather provide a roadmap for future coordination and engagement during WCRP implementation.
+The operational plan represents a preliminary exercise undertaken by the planning team to identify the potential leads, potential participants, and estimated cost for the implementation of each action in the Bulkley River watershed. @tbl-keyact summarizes individuals, groups, or organizations that the planning team felt could lead or participate in the implementation of the plan and should be interpreted as the first step in on-going planning and engagement to develop more detailed and sophisticated action plans for each entry in the table. The individuals, groups, and organizations listed under the "Lead(s)" or "Potential Participants" columns are those that provisionally expressed interest in participating in one of those roles or were suggested by the planning team for further engagement (denoted in bold), for those that are not members of the planning team. The leads, participants, and estimated costs in the operational plan are not binding nor an official commitment of resources, but rather provide a roadmap for future coordination and engagement during WCRP implementation.
 
-```{python echo=FALSE}
-#| label: tbl-S1
-#| tbl-cap: "Strategy 1"
+```{r keyact, echo = FALSE, results = 'asis'}
+#| label: tbl-keyact
+#| tbl-cap: "Additional Key Actors in the Bulkley River watershed. Key Actors are the individuals, groups, and/or organizations, outside of the planning team, with influence and relevant experience in the watershed, whose engagement will be critical for the successful implementation of this WCRP."
 #| warning: false
-#| echo: false
 
-import numpy as np
-from IPython.display import display
-import pandas as pd
+library("flextable")
 
- 
-def fix_table(val):
-    return str(val)
-
-def highlighttab7(val):
-    red = '#ff0000;'
-    yellow = '#ffff00;'
-    lgreen = '#92d050;'
-    dgreen = '#03853e;'
-
-    if val=="Medium" or val=="Need more information": color = yellow
-    elif val=="Very high" or val=="Very effective" : color = lgreen
-    elif val =="High" or val=="Effective": color = dgreen
-    else: color = 'white'
-    return 'background-color: %s' % color
-
+data <- read.csv("data/key_actors.csv", check.names=FALSE)
+ft <- flextable(data)
+ft <- bg(ft, bg = "#008270", part = "header")
+ft <- color(ft, color = "white", part = "header")
+ft <- set_caption(ft)
+ft |> autofit() 
 ```
-
-
-`{\tiny`{=latex}
-```{python opplan, echo=FALSE}
-#| label: tbl-opplan
-#| tbl-cap: "Operational plan to support the implementation of strategies and actions to improve connectivity for target species in the Bulkley River watershed."
-#| warning: false
-#| echo: false
-
-from IPython.display import display
-import pandas as pd
-import numpy as np
-
-
-def df_operation(val):
-    return "background-color: black; color: white"
-
-
-data = pd.read_csv('data/operational-plan.csv', index_col=False)
-
-data = data.replace(np.nan, '', regex=True)
-
-rows = pd.IndexSlice[[0,10,13,18,23,24], :]
-
-data = data.style.applymap(df_operation, subset=rows).hide().set_properties(**{'text-align': 'left'})
-data.set_table_styles(
-   [{
-       'selector': 'th',
-       'props': [('background-color', '#008270'),('text-align', 'left')]
-   }])
-
-```
-`}`{=latex}

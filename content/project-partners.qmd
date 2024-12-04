@@ -11,7 +11,7 @@
 
 library("flextable")
 
-data <- read.csv("data/planning_team.csv", check.names=FALSE)
+data <- read.csv("data/planning_teambulk.csv", check.names=FALSE)
 ft <- flextable(data)
 ft <- bg(ft, bg = "#008270", part = "header")
 ft <- color(ft, color = "white", part = "header")
