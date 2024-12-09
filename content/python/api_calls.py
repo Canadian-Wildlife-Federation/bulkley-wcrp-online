@@ -81,6 +81,7 @@ def confirmed_barriers(rawDF):
         queryColumn1 = 'structure_list_status'
         priorityDF.query(f'{queryColumn1}  == "Confirmed barrier" & priority !=  "Non-actionable" ', inplace = True)
         priorityDF = priorityDF.drop(columns=['structure_list_status', 'priority'])
+        priorityDF.sort_values(by=['total_hab_gain_set'], ascending=False, inplace=True)
 
         priorityDF = capitalize_and_clean_columns(priorityDF)
         priorityDF.to_csv('data/confirmed_barriers.csv', index=False)
@@ -95,6 +96,7 @@ def assessedStrucDD(rawDF):
         queryColumn1 = 'structure_list_status'
         priorityDF.query(f'{queryColumn1}  == "Assessed structure that remains data deficient" ', inplace = True)
         priorityDF = priorityDF.drop(columns=['structure_list_status'])
+        priorityDF.sort_values(by=['total_hab_gain_set'], ascending=False, inplace=True)
 
         priorityDF = capitalize_and_clean_columns(priorityDF)
         priorityDF.to_csv('data/assessed_strucDD.csv', index=False)
@@ -112,6 +114,7 @@ def RehabilitatedBarriers(rawDF):
         queryColumn1 = 'structure_list_status'
         priorityDF.query(f'{queryColumn1}  == "Rehabilitated barrier" ', inplace = True)
         priorityDF = priorityDF.drop(columns=['structure_list_status'])
+        priorityDF.sort_values(by=['total_hab_gain_set'], ascending=False, inplace=True)
 
         priorityDF = capitalize_and_clean_columns(priorityDF)
         priorityDF.to_csv('data/rehabilitated_barriers.csv', index=False)
