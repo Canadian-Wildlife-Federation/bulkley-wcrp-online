@@ -37,7 +37,7 @@ The current connectivity status was estimated using three spatial models:
 #| warning: false
 #| echo: false
 
-df = conn_table.make_assess_table("Andromous Salmon", "Available Spawning Habitat", "% of total spawning habitat", 50, 75, 90, api.connect_spawn)
+df = conn_table.make_assess_table("Anadromous Salmon", "Available Spawning Habitat", "% of total spawning habitat", 50, 75, 90, api.connect_spawn)
 df
 
 ```
@@ -48,7 +48,7 @@ df
 #| warning: false
 #| echo: false
 
-df = conn_table.make_assess_table("Andromous Salmon", "Available Rearing Habitat", "% of total rearing habitat", 50, 75, 90, api.connect_rear)
+df = conn_table.make_assess_table("Anadromous Salmon", "Available Rearing Habitat", "% of total rearing habitat", 50, 75, 90, api.connect_rear)
 df
 
 
