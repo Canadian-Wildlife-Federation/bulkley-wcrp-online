@@ -5,11 +5,13 @@ import warnings
 
 warnings.filterwarnings('ignore')
 ```
+
 ```{r}
 #| echo: false
 #| warning: false
 
 library(reticulate)
+
 api <- import("python.api_calls")
 gain <- api$gain
 gain_spawn <- api$gain_spawn

@@ -13,7 +13,7 @@
         "\n",
         "warnings.filterwarnings('ignore')"
       ],
-      "id": "bf69d3a8",
+      "id": "a38c21a4",
       "execution_count": null,
       "outputs": []
     },
@@ -25,17 +25,17 @@
         "\n",
         "## Connectivity Status Assessment {-}\n",
         "\n",
-        "The planning team identified two Key Ecological Attributes (KEAs) to assess the current connectivity status of the watershed for each focal species – available spawning habitat and available rearing habitat (@tbl-connectivity). KEAs are the key aspects of anadromous salmon habitat that are being targeted by this WCRP. For each KEA, an associated indicator was assigned to measure the status of that KEA. The connectivity status indicators were used to establish goals to improve key habitat connectivity over time and is the baseline against which progress is tracked over time.\n",
+        "The planning team identified two Key Ecological Attributes (KEAs) to assess the current connectivity status of the watershed for each focal species: available spawning habitat and available rearing habitat (@tbl-connectivity). KEAs are the key aspects of anadromous salmon habitat that are being targeted by this WCRP. For each KEA, an associated indicator was assigned to measure the status of that KEA. The connectivity status indicators were used to establish goals to improve key habitat connectivity over time and is the baseline against which progress is tracked over time.\n",
         "\n",
         "The current connectivity status was estimated using three spatial models:\n",
         "\n",
-        "1.\tAccessibility model: Naturally accessible waterbodies are those that are considered likely accessible to focal species if no human-made barriers existed on the landscape. These were spatially delineated for each focal species using natural barriers (i.e., waterfalls, gradient barriers, or subsurface flows) that would naturally limit upstream movement (Table XX).\n",
+        "1.\tAccessibility model: Naturally accessible waterbodies are those that are considered likely accessible to focal species if no human-made barriers existed on the landscape. These were spatially delineated for each focal species using natural barriers (i.e., waterfalls, gradient barriers, or subsurface flows) that would naturally limit upstream movement.\n",
         "\n",
-        "2.\tHabitat model: A subset of the naturally accessible waterbody layer was defined as key habitat, i.e., habitat likely to support spawning or rearing, rather than simply movement corridors. The habitat model identifies areas within waterbodies that have a higher potential to support key habitat based on stream channel gradient and discharge. The habitat model criteria can be found in (Table XX).\n",
+        "2.\tHabitat model: A subset of the naturally accessible waterbody layer was defined as key habitat, i.e., habitat likely to support spawning or rearing, rather than simply movement corridors. The habitat model identifies areas within waterbodies that have a higher potential to support key habitat based on stream channel gradient and discharge. The habitat model criteria can be found in (@tbl-param-bulkley).\n",
         "\n",
-        "3.\tConnectivity model: A layer of known or modelled structures was overlaid  on the key habitat results. Structures  with unknown passability were treated as a full barrier until confirmed passable by either local knowledge, desktop review, or field assessment. Watershed connectivity was estimated by calculating the amount of key habitat that is connected to the ocean (i.e., not fragmented by human-made barriers). Key habitat with no structures or only passable structures downstream was considered connected. Key habitat upstream of full, partial, or potential barriers was considered disconnected. All connected habitat was summed and divided by the total amount of key habitat in the watershed to arrive at the KEA indicators. Detailed methods for the connectivity model can be found in [Appendix C](data-methods.qmd)\n"
+        "3.\tConnectivity model: A layer of known or modelled structures was overlaid  on the key habitat results. Structures  with unknown passability were treated as a full barrier until confirmed passable by either local knowledge, desktop review, or field assessment. Watershed connectivity was estimated by calculating the amount of key habitat that is connected to the ocean (i.e., not fragmented by human-made barriers). Key habitat with no structures or only passable structures downstream was considered connected. Key habitat upstream of full, partial, or potential barriers was considered disconnected. All connected habitat was summed and divided by the total amount of key habitat in the watershed to arrive at the KEA indicators. Detailed methods for the connectivity model can be found in [Appendix C](data-methods.qmd).\n"
       ],
-      "id": "f8f069c6"
+      "id": "264a0e64"
     },
     {
       "cell_type": "code",
@@ -57,9 +57,9 @@
       "cell_type": "markdown",
       "metadata": {},
       "source": [
-        "**Comments:** Indicator rating definitions are based on the consensus decisions of the planning team. The current status is based on the CWF Barrier Prioritization Model output, which is current as of October 2022.\n"
+        "**Comments:** Indicator rating definitions are based on the consensus decisions of the planning team. The current status is based on the connectivity model output, which is current as of December 2024.\n"
       ],
-      "id": "afdf8cb8"
+      "id": "862af5d6"
     },
     {
       "cell_type": "code",
@@ -71,7 +71,7 @@
         "df = conn_table.make_assess_table(\"Andromous Salmon\", \"Available Rearing Habitat\", \"% of total rearing habitat\", 50, 75, 90, api.connect_rear)\n",
         "df\n"
       ],
-      "id": "be386a7f",
+      "id": "bdeed7ec",
       "execution_count": null,
       "outputs": []
     },
@@ -79,12 +79,12 @@
       "cell_type": "markdown",
       "metadata": {},
       "source": [
-        "**Comments:** Indicator rating definitions are based on the consensus decisions of the planning team. The current status is based on the CWF Barrier Prioritization Model output, which is current as of October 2022. \n",
+        "**Comments:** Indicator rating definitions are based on the consensus decisions of the planning team. The current status is based on the connectivity model output, which is current as of December 2024. \n",
         "\n",
         "\n",
         "## Goals {-}\n"
       ],
-      "id": "598b1d15"
+      "id": "ef15727f"
     },
     {
       "cell_type": "code",
@@ -103,8 +103,8 @@
         "import numpy as np\n",
         "\n",
         "df = pd.DataFrame({\"Goal #\": [1,2],\n",
-        "                   \"Goal\": [\"By 2031, the percent (%) of total linear spawning habitat accessible to anadromous salmonids will increase from \"+ str(api.watershed_connectivity(\"SPAWNING\")[0]) +\"% to 95% within the Bulkley River watershed (i.e., reconnect at least \"+str(round(api.gain_spawn))+\" km of spawning habitat).\",\n",
-        "                            \"By 2031, the percent (%) of total linear rearing habitat accessible to anadromous salmonids will increase from \"+str(api.watershed_connectivity(\"REARING\")[0])+\"% to 80% within the Bulkley River watershed (i.e., reconnect at least \"+str(round(api.gain_rear))+\" km of rearing habitat). \"]\n",
+        "                   \"Goal\": [\"By 2031, the percent (%) of total linear spawning habitat connected for anadromous salmonids will increase from \"+ str(api.watershed_connectivity(\"SPAWNING\")[0]) +\"% to 95% within the Bulkley River watershed (i.e., reconnect at least \"+str(round(api.gain_spawn))+\" km of spawning habitat).\",\n",
+        "                            \"By 2031, the percent (%) of total linear rearing habitat connected for anadromous salmonids will increase from \"+str(api.watershed_connectivity(\"REARING\")[0])+\"% to 80% within the Bulkley River watershed (i.e., reconnect at least \"+str(round(api.gain_rear))+\" km of rearing habitat). \"]\n",
         "                    })\n",
         "\n",
         "data = df.style.hide().set_properties(**{'text-align': 'left'})\n",

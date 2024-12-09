@@ -1,3 +1,10 @@
+```{r}
+#| echo: false
+#| warning: false
+
+library(reticulate)
+```
+
 ```{python echo=FALSE}
 #| echo: false
 import warnings
