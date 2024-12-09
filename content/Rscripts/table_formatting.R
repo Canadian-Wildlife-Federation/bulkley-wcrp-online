@@ -1,6 +1,6 @@
 library("flextable")
 library("magrittr")
-Library("officer")
+library("officer")
 
 std_border <- fp_border(color = "grey")
 
