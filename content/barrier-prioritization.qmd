@@ -124,4 +124,9 @@ data <- read.csv("data/rehabilitated_barriers.csv", check.names=FALSE)
 ft <- flextable(data)
 ft <- format_flextable(ft)
 ft
+
+source(create_HAC.R)
+p <- plot_cumulative_avg_gain("data/combined_tracking_table_crossigns_BULK.csv")
+p
+
 ```
