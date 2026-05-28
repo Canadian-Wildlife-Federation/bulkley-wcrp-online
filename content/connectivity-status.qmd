@@ -1,41 +1,46 @@
 
 
-# Connectivity Status Results {-}
+# Key Ecological Attributes and Connectivity Status Results   {-}
 
 ## Current Connectivity Status {-}
 
-The Planning Team identified two Key Ecological Attributes (KEAs) to assess the current connectivity status of the watershed for each focal species – Accessible Key Habitat and Accessible Overwintering Habitat (Table 6). KEAs are the key aspects of anadromous salmon habitat that are being targeted by this WCRP. For each KEA, an associated indicator was assigned to measure the status of that KEA. The connectivity status indicators were used to establish goals to improve key habitat connectivity over time and is the baseline against which progress is tracked over time. 
+The Planning Team identified two Key Ecological Attributes (KEAs) to assess the current connectivity status of the watershed for each focal species: available spawning habitat and available rearing habitat (Table 8). KEAs are the key aspects of anadromous salmon habitat that are being targeted by this WCRP. For each KEA, an associated indicator was assigned to measure the status of that KEA. The connectivity status indicators were used to establish goals to improve key habitat connectivity over time and is the baseline against which progress is tracked over time. 
 
-To support a flexible prioritization framework to identify priority barriers in the watershed, two assumptions are made: 1) any modelled (i.e., the passability status is unknown) or partial barriers are treated as complete barriers to passage and 2) the habitat modelling is binary, it does not assign any habitat quality values. As such, the current connectivity status is refined over time as more data on habitat and barriers are collected. 
+In the Bulkley River watershed, X km of Pacific salmon and steelhead spawning habitat are currently connected to the ocean and X km are disconnected from it. This means that X% of the X km of total spawning habitat is connected. In the Bulkley River watershed, X km of Pacific salmon and steelhead rearing habitat are currently connected to the ocean and X km are disconnected from it. This means that X% of the X km of total rearing habitat is connected. 
 
-Table 6: Connectivity status assessment for spawning and rearing (a) and overwintering (b) habitat in the Horsefly River watershed.  
-Comments: Indicator rating definitions are based on the consensus decisions of the Planning Team, including the decision not to define Fair. The current status is based on the connectivity model output, which is current as of May 2026. 
-Comments: No baseline data exists on the extent of overwintering habitat in the watershed. A priority action is included in the Operational Plan (strategy 2.3) to develop a habitat layer, and this will be used to inform this connectivity status assessment in the future. 
+Table 8: Connectivity status assessment for spawning (a) and rearing (b) habitat in the Bulkley River watershed. The two KEAs - Accessible Spawning Habitat and Accessible Rearing Habitat - are evaluated by dividing the length of linear habitat (of each type) that is currently accessible to focal species by the total length of all linear habitat (of each type) in the watershed.  
+Comments: Indicator rating definitions are based on the consensus decisions of the Planning Team. The current status is based on the connectivity model output, which is current as of May 2026. 
 
-In the Horsefly River watershed, X km of Pacific salmon spawning and rearing habitat are currently connected to the ocean and X km are disconnected from it. This means that X% of the X km of total habitat is connected. 
+Comments: Indicator rating definitions are based on the consensus decisions of the Planning Team. The current status is based on the connectivity model output, which is current as of May 2026. 
 
 ## Goals {-}
 
-Table 7: Goals to improve (1) spawning and rearing and (2) overwintering habitat connectivity for focal species in the Horsefly River watershed over the lifespan of the WCRP (2021-2040). The goals were established through discussions with the Planning Team and represent the resulting desired state of connectivity in the watershed. The goals are subject to change as more information and data are collected over the course of the plan timeline (e.g., the current connectivity status is updated based on barrier field assessments). 
+Table 9: Goals to improve spawning (1) and rearing (2) habitat connectivity for focal species in the Bulkley River watershed over the lifespan of the WCRP (2021-2031). The goals were established in 2021 through discussions with the Planning Team and represent the resulting desired state of connectivity in the watershed. The goals differ from the current connectivity status due to closing of knowledge gaps from field investigations and rehabilitation of barriers in the watershed since that time. Goals are subject to change as more information and data are collected over the course of the plan timeline (e.g., the current connectivity status is updated based on barrier field assessments). 
 
 
 ## Structure Count {-}
 
-In the Horsefly River watershed, X structures potentially disconnect Pacific salmon spawning or rearing habitat. Of these, X are identified as barriers in need of rehabilitation (priority barriers), X are identified as barriers that do not warrant rehabilitation (non-actionable), and X require further field assessment. 
+In the Bulkley River watershed, X structures potentially disconnect focal species spawning  habitat, and X structures potentially disconnect focal species rearing habitat. Of these, X are identified as barriers in need of rehabilitation (priority barriers), X are identified as barriers that do not warrant rehabilitation (non-actionable), and X require further field assessment.  
 
 
 ## Maps {-}
 
-Figure 1: Map of Pacific salmon spawning and rearing habitat and structures that are confirmed or potential barriers to fish passage in the Horsefly River watershed as of May 2026. Structure data were obtained from BCFishPass and the Canadian Aquatic Barriers Database (aquaticbarriers.ca). The accessibility model represents areas of the watershed that one or more species of Pacific salmon could access naturally in the absence of anthropogenic barriers. The habitat model represents the subset of accessible waterbodies that may be used by one or more species of Pacific salmon for spawning or rearing. Available local knowledge and data were incorporated and overruled habitat model results. Thick red lines represent habitat considered to be fully disconnected (upstream of barriers or unassessed structures). Barriers that were rehabilitated through implementation of this plan are shown, but other excluded structures (e.g., those found to be passable) are not. 
+![Figure 6: Map of Pacific salmon and steelhead spawning habitat and structures that are confirmed or potential barriers to fish passage in the Bulkley River watershed as of May 2026. Structure data were obtained from BCFishPass and the Canadian Aquatic Barriers Database (aquaticbarriers.ca). The accessibility model represents areas of the watershed that one or more Pacific salmon and steelhead could access naturally in the absence of anthropogenic barriers. The habitat model represents the subset of accessible waterbodies that may be used by one or more Pacific salmon and steelhead for spawning. Available local knowledge and data were incorporated and overruled habitat model results. Thick red lines represent habitat considered to be fully disconnected (upstream of barriers or unassessed structures). Barriers that were rehabilitated through implementation of this plan are shown, but other excluded structures (e.g., those found to be passable) are not.](images/Bulk_spawning_2026-05-28.png)
+
+
+![Figure 7: Map of Pacific salmon and steelhead rearing habitat and structures that are confirmed or potential barriers to fish passage in the Bulkley River watershed as May 2026. Structure data were obtained from BCFishPass and the Canadian Aquatic Barriers Database (aquaticbarriers.ca). The accessibility model represents areas of the watershed that one or more Pacific salmon and steelhead could access naturally in the absence of anthropogenic barriers. The habitat model represents the subset of accessible waterbodies that may be used by one or more Pacific salmon and steelhead for rearing. Available local knowledge and data were incorporated and overruled habitat model results. Thick red lines represent habitat considered to be fully disconnected (upstream of barriers or unassessed structures). Barriers that were rehabilitated through implementation of this plan are shown, but other excluded structures (e.g., those found to be passable) are not.](images/Bulk_rearing_2026-05-28.png)
 
 
 ## Habitat Accumulation Curves
 
-Figure 2: Habitat Accumulation Curve (HAC) showing structures in the Horsefly River watershed as of May 2026. Structures are ranked based on how much (km) habitat for spawning or rearing is upstream. The y-axis represents the cumulative amount of potential habitat gain (km). Sets of structures are indicated by a grey line below the curve, indicating that gains from addressing the downstream structure alone would be less than the combined gains from addressing all structures in the set. Habitat upstream of unassessed structures is considered disconnected until field assessments are completed. Structures that were excluded as passable are not shown; however, rehabilitated barriers are shown to demonstrate the connectivity gains achieved through implementation of this plan. 
+Figure 8: Habitat Accumulation Curve (HAC) showing structures in the Bulkley River watershed as of May 2026. Structures are ranked based on how much (km) spawning habitat for Pacific salmon and steelhead is upstream, then by amount (km) of rearing habitat is upstream. The y-axis represents the cumulative amount of potential habitat gain (km). Habitat upstream of unassessed structures is considered disconnected until field assessments are completed. Structures that were excluded as passable are not shown; however, rehabilitated barriers are shown (where applicable) to demonstrate the connectivity gains achieved through implementation of this plan.  
 
+
+Figure 9: Habitat Accumulation Curve (HAC) showing structures in the Bulkley River watershed as of May 2026, zoomed in to the top xxx structures. Structures are ranked based on how much (km) spawning and rearing habitat for Pacific salmon and steelhead is upstream. The y-axis represents the cumulative amount of potential habitat gain (km). Sets of structures are indicated by a grey line below the curve, indicating that gains from addressing the downstream structure alone would be less than the combined gains from addressing all structures in the set. Habitat upstream of unassessed structures is considered disconnected until field assessments are completed. Structures that were excluded as passable are not shown; however, rehabilitated barriers are shown to demonstrate the connectivity gains achieved through implementation of this plan.  
 
 ## Habitat Accumulation Summary Table
-Table 8: Labelled structures in the Habitat Accumulation Curve (Error! Reference source not found.), their rank, and upstream spawning and rearing habitat for Pacific salmon in the Horsefly River watershed. Habitat gain (averaged across sets) represents the amount (km) of habitat upstream of that structure to the next structure and depicts the potential gain in habitat if passage at that structure was restored.  
+
+Table 10: Labelled structures in the Habitat Accumulation Curves (Figures X-X), their rank, and upstream habitat for Pacific salmon and steelhead spawning and rearing in the Bulkley River watershed. Habitat gain (averaged across sets) represents the amount (km) of habitat upstream of that structure to the next structure and depicts the potential gain in habitat if passage at that structure was restored. Three ranks are assigned based on the following scenarios: (1) spawning and rearing habitat combined per barrier or set of barriers, (2) spawning habitat per barrier or set of barriers, and (3) rearing habitat per barrier or set of barriers.    
 
 ```{r hac1, echo = FALSE, results = 'asis'}
 #| label: table-1
@@ -64,3 +69,8 @@ ft <- flextable(data)
 ft <- format_flextable(ft)
 ft
 ```
+
+
+## Weighted Ranks based on Stream Habitat Features {-}
+
+Table 11: Top 30 ranked structures potentially blocking the most spawning habitat for Pacific salmon and steelhead in the Bulkley River watershed. Three ranks are assigned based on the following scenarios: (1) most spawning and rearing habitat combined upstream per barrier or set of barriers, (2) most spawning and rearing habitat combined upstream per barrier or set of barriers, weighted in favor of structures located in subwatersheds that are relatively intact, and (3) most spawning and rearing habitat combined upstream per barrier or set of barriers, weighted in favor of structures located in subwatersheds that are relatively degraded. Weightings are based on indicator ratings assigned to each subwatershed by the Skeena Sustainability Assessment Forum (2021; Eclipse Geomatics 2021).  
