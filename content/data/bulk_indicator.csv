@@ -1,0 +1,25 @@
+Indicator Type ,Impact Category ,Indicator ,Thresholds used for classification (_cl) ,,,Units ,Threshold Type 
+,,,Low ,Moderate ,High ,,
+Watershed Pressures ,Roads ,Road density ,0 ,0.4 ,1.2 ,km/km2 ,Benchmark 
+,,Road/stream crossing density (Coastal) ,0 ,0.4 ,0.8 ,No./km2 ,Benchmark 
+,,Road/stream crossing density (Interior) ,0 ,0.16 ,0.32 ,No./km2 ,Benchmark 
+,,Road density near streams ,0 ,0.08 ,0.16 ,km/km2 ,Benchmark 
+,,Road density on steep slopes ,0 ,0.06 ,0.12 ,km/km2 ,Benchmark 
+,Hydrologic processes ,ECA (peak flow)* ,<15% ,15-20% ,>20% ,% ,Benchmark 
+,,Young 2nd growth forest ,0 ,5 ,25 ,% ,Breakpoint 
+,Water allocations ,Dams & impoundments ,0 ,1 ,2 ,No. ,Breakpoint 
+,,Water licences ,0 ,2 ,5 ,No. ,Breakpoint 
+,,GW wells ,0 ,5 ,10 ,No. ,Benchmark 
+,,Water allocation restrictions ,0 ,1 ,3 ,No. ,Breakpoint 
+,Disturbance ,Riparian disturbance ,0 ,5 ,15 ,% ,Breakpoint 
+,,TLCA ,0 ,25 ,75 ,% ,Breakpoint 
+,Pollution ,Mines ,0 ,1 ,1 ,No. ,Breakpoint 
+,,Point source pollution ,0 ,1 ,5 ,No. ,Breakpoint 
+Watershed sensitivity ,Watershed sensitivity ,Summer low flow sensitivity ,0 ,25 ,50 ,% ,Breakpoint 
+,,Winter low flow sensitivity ,0 ,25 ,50 ,% ,Breakpoint 
+,,Drainage density ruggedness ,0 ,2000 ,4000 ,unitless ,Breakpoint 
+,,Lakes & wetlands ,>5 ,5 ,1 ,% ,Breakpoint 
+Watershed importance ,Watershed importance ,Salmonid habitat ,0 ,100 ,200 ,km  ,Breakpoint 
+,,Salmon spawning ,0 ,1 ,10 ,km  ,Breakpoint 
+,,Salmon escapement**?? ,? ,? ,? ,? ,? 
+,,Number of at-risk CUs?? ,? ,? ,? ,? ,? 

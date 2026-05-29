@@ -2,9 +2,9 @@
 
 ## Situation Alanysis {-}
 
-The following situation model was developed by the WCRP partnership to “map” the project context and brainstorm potential actions for implementation. Green text is used to identify actions that were selected for implementation (see ‘Strategies & Actions’), and red text is used to identify actions that the project team has decided to exclude from the current iteration of the plan, given that they were either outside of the project scope or were deemed to be ineffective by the Planning Team. 
+The following situation model was developed by the WCRP partnership to “map” the project context and brainstorm potential actions for implementation. Green text is used to identify actions that were selected for implementation (see ‘Strategies & Actions’), and red text is used to identify actions that the project team has decided to exclude from the current iteration of the plan, given that they were either outside of the project scope or were deemed to be ineffective by the Planning Team.  
 
-Figure 10: Situation analysis developed by the Planning Team to identify factors that contribute to fragmentation (orange boxes), biophysical results (brown boxes), and potential strategies/actions to improve connectivity (yellow hexagons) for focal species in the Bulkley River watershed. 
+![Figure 6: Situation analysis developed by the Planning Team to identify factors that contribute to fragmentation (orange boxes), biophysical results (brown boxes), and potential strategies/actions to improve connectivity (yellow hexagons) for focal species in the Bulkley River watershed.](images/Situation_Analysis.jpg) 
 
 ## Strategies and Actions {-}
 
@@ -67,3 +67,8 @@ ft
 ## Theories of Change {-}
 
 Theories of Change are explicit assumptions around how the identified actions will achieve gains in freshwater connectivity and contribute towards reaching the goals of the plan. To develop Theories of Change, the Planning Team developed explicit assumptions for each strategy which helped to clarify the rationale used for undertaking actions and provided an opportunity for feedback on invalid assumptions or missing opportunities. The Theories of Change are results oriented and clearly define the expected outcome. The following theory of change models were developed by the WCRP Planning Team to “map” the causal (“if-then”) progression of assumptions of how the actions within a strategy work together to achieve project goals. 
+
+
+![Figure 7: Theory of change developed by the Planning Team for the actions identified under Strategy 1: Barrier Rehabilitation in the Bulkley River watershed.](images/Fig_7_theory.png)
+
+![Figure 8: Theory of change developed by the Planning Team for the actions identified under Strategy 2: Barrier Prevention in the Bulkley River watershed.](images/Fig_8_theory.png)
