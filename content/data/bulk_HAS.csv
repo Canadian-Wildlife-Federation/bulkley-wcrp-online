@@ -1,0 +1,73 @@
+Barrier ID,Internal Name,Structure Status,UTM Zone,UTM Easting,UTM Northing,CWF Model Rank (Spawning Habitat),CWF Model Rank (Rearing Habitat),Average Spawning Habitat Upstream of Structure (km),Actual Spawning Habitat Upstream of Structure (km),Average Rearing Habitat Upstream of Structure (km),Actual Rearing Habitat Upstream of Structure (km)
+57944,Toboggan Cr @ Hwy 16 (57944),Non-actionable barrier,9,607729,6089383,1,1,18.32,18.32,23.69,23.69
+1024756616,Sinclair Cr @ Telkwa R FSR (24756616),,9,596354,6053671,2,4,12.34,12.34,16.37,16.37
+123770,John Brown Cr @ Hwy 16 (123770),Data-deficient barrier,9,606627,6097184,3,5,11.76,11.76,15.9,15.9
+197663,Johnny David Cr @ Hwy 16 (197663),Data-deficient barrier,9,670241,6044772,4,3,10.28,10.28,18.32,18.32
+197960,Corya Cr @ Railway (197960),Priority barrier,9,605806,6099877,5,10,9.09,9.09,12.36,12.36
+197976,Ailport Cr @ Hwy 16 (197976),Data-deficient barrier,9,680645,6039756,6,6,4.83,0.4,9.62,0.4
+197975,Ailport Cr @ Private (197975),Priority barrier,9,680831,6040045,6,6,4.83,9.26,9.62,18.84
+197662,Richfield Cr @ Hwy 16 (197662),Priority barrier,9,672404,6044146,7,8,7.66,7.66,13.83,13.83
+197964,Bulkley R @ Railway (197964),Data-deficient barrier,9,691208,6031460,8,2,6.27,7.38,18.595,19.58
+197967,Taman Cr @ Hwy 16 (197967),Rehabilitated barrier,9,692434,6032341,8,2,6.27,5.16,18.595,17.61
+58242,Kathlyn Cr @ Hwy 16 (58242),Data-deficient barrier,9,616947,6073197,9,14,3.595,3.22,4.31,4.31
+58271,Kathlyn Cr @ Henry Rd (58271),,9,615887,6074598,9,62,3.595,3.97,2.805,2.31
+197658,Byman Cr @ Hwy 16 (197658),Priority barrier,9,666847,6044305,10,23,4.99,4.99,5.3,5.3
+123377,Thompson Cr @ Walcott Rd (123377),Priority barrier,9,641633,6049398,11,26,1.71,1.71,2.188,1.7
+124487,Porphry Cr @ Hwy 16 (124487),Priority barrier,9,603073,6113379,12,22,4.99,4.99,5.71,5.71
+198090,Cesford Cr @ Raiway (198090),Data-deficient barrier,9,673247,6043223,13,21,2.35,2.35,2.45,2.45
+124420,Station Cr @ Hwy 16 (124420),Priority barrier,9,586632,6122395,14,19,3.71,3.71,5.91,5.91
+197668,Coffin Cr @ Railway (197668),Data-deficient barrier,9,634351,6054625,15,12,1.603333333,0.04,1.676666667,0.05
+124504,Coffin Cr @ Lawson Rd (124504),Data-deficient barrier,9,634330,6054584,15,12,1.603333333,2.16,1.676666667,2.15
+195476,Coffin Cr @ Hydro ROW (195476),,9,634279,6052600,15,12,1.603333333,2.61,1.676666667,2.83
+58067,Gramophone Cr @ Telkwa High Rd (58067),Priority barrier,9,609735,6092894,16,32,3.36,3.36,3.42,3.42
+57793,Vallee Cr @ Walcott Rd (57793),Data-deficient barrier,9,641467,6044065,17,18,1.78,1.78,5.59,5.59
+58208,Schippers Cr @ Branch off of Kitsequecla Rd (58208),,9,603056,6089058,18,41,1.39,1.39,2.56,2.56
+58285,Wiggs Cr @ Private (58285),,9,609106,6093156,19,64,1.035,0.74,1.165,0.74
+58068,Trib to Gramophone CR @ Telkwa High Rd (58068),,9,609660,6093553,19,64,1.035,1.33,1.165,1.59
+3138,McQuarrie Cr @ North Rd (3138),,9,656523,6048132,20,16,1.14,1.14,7.87,7.87
+123375,Trib to Thompson Cr @ Hwy 16 (123375),Non-actionable barrier,9,642498,6048199,21,26,1.5225,0.49,2.188,0.5
+123380,Trib to Thompson Cr @ Private (123380),,9,642972,6048230,21,26,1.5225,1.58,2.188,1.58
+1001802267,Thompson Cr @ unnamed (1802267),,9,644009,6047451,21,26,1.5225,2.11,2.188,2.1
+123382,Trib to Thompson Cr @ McNeil Rd (123382),,9,644704,6045590,21,26,1.5225,1.91,2.188,5.06
+195332,Trib to Bulkley R @ Unnamed (195332),,9,604923,6116233,22,96,1.13,1.13,1.13,1.13
+197640,Trib to Buck Cr @ Buck Flats Rd (197640),Priority barrier,9,654312,6012383,23,20,1.12,1.12,6.15,6.15
+58158,McDowell Cr @ Hwy 16 (58158),Data-deficient barrier,9,628037,6060541,24,47,0.563333333,0.3,0.978,0.3
+58159,McDowell Cr @ Private (58159),Rehabilitated barrier,9,627642,6060449,24,47,0.563333333,0.45,0.978,0.45
+197912,Robert Hatch Cr @ Private (197912),Rehabilitated barrier,9,670963,6046221,25,57,2.8,2.8,8.98,8.98
+198048,Cesford Cr @ Hwy 15 (198048),Data-deficient barrier,9,674396,6043432,26,58,1.825,0.67,5.555,0.68
+198049,Cesford Cr @ Hwy 118 (198049),Priority barrier,9,674875,6043782,26,58,1.825,2.98,5.555,10.43
+197664,Barren Cr @ Hwy 16 (197664),Priority barrier,9,660455,6037919,28,88,2.67,2.67,2.67,2.67
+124500,Helps Cr @ Lawson Rd (124500),Priority barrier,9,627541,6058702,32,9,0.84,0.84,9.98,9.98
+197665,Barren Cr @ Railway (197665),Priority barrier,9,660628,6037843,34,147,0.27,0.27,0.26,0.26
+1f365462-063c-491e-9fb3-bfac004d9183,Coffin Cr Dam,Data-deficient barrier,9,634763,6051171,36,12,0.9,0.9,4.0175,11.04
+1001800865,Trib to Sunsets Cr @ Unnamed (1800865),,9,606787,6038690,38,7,0.37,0.37,15.1,15.1
+58245,Simpson Cr @ Lake Kathlyn Rd (58245),Data-deficient barrier,9,615328,6075075,43,171,0.291666667,0.04,0.32,0.04
+203126,Simpson Cr @ Private (203126),Data-deficient barrier,9,615299,6075101,43,171,0.291666667,0.39,0.32,0.39
+203122,Simpson Cr @ Railway (203122),Data-deficient barrier,9,614948,6075227,43,171,0.291666667,0.72,0.32,0.9
+197974,Watson Cr @ Hwy 16 (197974),Data-deficient barrier,9,680390,6040069,,11,0,0,7.04,1.96
+198065,Watson Cr @ Montgomery Rd (198065),Data-deficient barrier,9,680197,6041646,,11,0,0,7.04,12.12
+123445,Tyhee Cr @ Hwy 16 (123445),Priority barrier,9,627236,6061461,,13,0,0,5.925,0.49
+123446,Tyhee Cr @ Tyhee Ld Rd (123446),Non-actionable barrier,9,627516,6061772,,13,0,0,5.925,11.36
+197653,Perow Cr @ Perow Loop Rd (197653),Data-deficient barrier,9,665518,6044200,,17,0,0,7.38,7.38
+195943,Stock Cr @ Barrett Stn Rd (195943),Priority barrier,9,645444,6035049,,24,0,0,2.64,0.76
+195944,Stock Cr @ Hwy 16 (195944),Priority barrier,9,645982,6035606,,24,0,0,2.64,7.11
+3139,Trib to McQuarrie @ North Rd (3139),Data-deficient barrier,9,656651,6048543,,25,0,0,5.05,5.05
+195290,Gibson Cr @ Hwy 16 (195290),Priority barrier,9,640022,6051682,,29,0,0,2.26,1.24
+195288,Gibson Cr @ Schnider Rd (195288),Priority barrier,9,640930,6051567,,29,0,0,2.26,3.28
+123777,Graphite Cr @ Campbell Rd (123777),Data-deficient barrier,9,607136,6101121,,46,0,0,1.0975,0.02
+199463,Graphite Cr @ Campbell Rd (199463),Data-deficient barrier,9,607116,6101128,,46,0,0,1.0975,0.06
+123775,Witset Cr @ Hwy 16 (123775),Non-actionable barrier,9,606445,6099726,,49,0,0,1.21,1.21
+197646,Trib to Buck Cr @ Spur off Parrot FSR (197646),Data-deficient barrier,9,672023,6005200,,77,0,0,1.33,1.33
+3054,Johnny David Cr @ North Rd FSR (3054),Data-deficient barrier,9,664884,6052690,,80,0,0,2.02,1.04
+199457,Glass Cr @ Private (199457),Data-deficient barrier,9,613248,6081291,,81,0,0,1.035,0.06
+199458,Glass Cr @ Private (199458),Data-deficient barrier,9,613283,6081246,,81,0,0,1.035,1.62
+197656,Trib to Bulkley R @ Hwy 16 (197656),Data-deficient barrier,9,663328,6042066,,87,0,0,0.85,0.04
+199455,Trib to Old Woman Cr @ Conrad Lk FSR (199455),Data-deficient barrier,9,688086,6037493,,90,0,0,2.62,2.62
+199452,Taman Cr @ Taman Cr FSR (199452),Data-deficient barrier,9,691405,6036231,,102,0,0,1.275,2.18
+199448,Trib to Klo Cr @ Klo Cr FSR (199448),Priority barrier,9,668634,6021387,,109,0,0,0.93,0.93
+198044,Trib to Toboggan Cr @ Railway (198044),Data-deficient barrier,9,610393,6084973,,114,0,0,0.925,0.13
+124424,Trib to Waterfall Cr @ Railway (124424),Data-deficient barrier,9,589483,6122989,,185,0,0,0.3475,0.05
+124421,Trib to Waterfall Cr @ 11th Ave (124421),Priority barrier,9,589467,6123041,,185,0,0,0.3475,0.13
+124422,Trib to Waterfall Cr @ Hwy 16/10th Ave (124422),Data-deficient barrier,9,589500,6123161,,185,0,0,0.3475,0.31
+199450,Trib to Klo Cr @ Equity Mine FSR (199450),Data-deficient barrier,9,666891,6019033,,243,0,0,0.02,0.02
+123778,Graphite Cr @ Hwy 16 (123778),Data-deficient barrier,9,605388,6103278,,265,0,0,0.08,0.08
