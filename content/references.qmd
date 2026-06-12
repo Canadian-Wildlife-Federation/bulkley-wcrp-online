@@ -1,6 +1,92 @@
-<!-- # Bulkley River Watershed (Laxyip | Wedzin Kwah) Connectivity Remediation Plan: 2021 - 2031 {-} -->
 
-# References {.unnumbered}
+# Acknowledgements and References {-}
 
-::: {#refs}
-:::
+## Recommended Citation 
+
+B. Rebellato, N. Mazany-Wright, F. Montgomery, S. Sra, and N. W. R. Lapointe. 2026. Horsefly River Watershed Secwepemcúl’ecw Connectivity Restoration Plan: 2021 - 2040. Canadian Wildlife Federation. Ottawa, Ontario, Canada. 
+
+
+## Acknowledgements {-}
+
+This plan is the culmination of a collaborative planning process undertaken in the Bulkley River watershed over many months with a team of individuals and groups that are passionate about the conservation and restoration of freshwater ecosystems and the species they support. Plan development was funded by the BC Salmon Restoration and Innovation Fund and the RBC Bluewater Project. We were fortunate to benefit from the feedback, guidance, and wisdom of many people who volunteered their time throughout this process — this publication would not have been possible without the engagement of our partners and the planning team (see Appendix B – Partners and Detailed Methods ). 
+
+We recognize the incredible fish passage and connectivity work that has occurred in the Bulkley River watershed to-date, and we are excited to continue partnering with local groups and organizations to build up existing initiatives and provide a road map to push connectivity restoration forward over the next 10 years and beyond. 
+
+The Canadian Wildlife Federation recognizes that the lands and waters that form the basis of this plan are the traditional unceded territory of the Wet’suwet’en and Gitxsan peoples. We are grateful for the opportunity to learn from the stewards of this land and work together to benefit Pacific Salmon and steelhead. A special thank you to Dallas Nikal, Mike Ridsdale, and Elaine Sampson for sharing the traditional Witsuwit’en and Gitxsanimax names used in this plan.  
+
+
+## References {-}
+
+Agrawal, A., R. S. Schick, E. P. Bjorkstedt, R. G. Szerlong, M. N. Goslin, B. C. Spence, T. H. Williams, and K. M. Burnett. 2005. Predicting the Potential for Historical Coho, Chinook, and Steelhead Habitat in Northern California. National Oceanic and Atmospheric Administration. 
+
+Bjornn, T. C., and D. W. Reiser. 1991.“Habitat Requirements of Salmonids in Streams.” Influences of Forest and Rangeland Management on Salmonid Fishes and Their Habitats 19: 83–138. 
+
+Burnett, Kelly M, Gordon H Reeves, Daniel J Miller, Sharon Clarke, Ken Vance-Borland, and Kelly Christiansen. 2007.“Distribution of Salmon-Habitat Potential Relative to Landscape Characteristics and Implications for Conservation.” Ecol. Appl. 17 (1): 66–80. 
+
+Busch, D. S., M. Sheer, K. Burnett, P. Mcelhany, and T. Cooney. 2011.“Landscape-Level Model to Predict Spawning Habitat for Lower Columbia River Fall Chinook Salmon (Oncorhynchus Tshawytscha).”River Research Applications 29: 291–312. 
+
+Casselman, J., and D. Stanley. 2010.“Bulkley/Fulton Watershed Fish Passage Culvert Assessment Program.” 
+
+Chudyk, W. E. 1979.“Suskwa River Steelhead Trout: The Colonization of Harold-Price Creek with Hatchery-Reared Steelhead.” Skeena Fisheries Report 79-1. 
+
+Cooney, T., and D. Holzer. 2006.Appendix c: Interior Columbia Basin Stream Type Chinook Salmon and Steelhead Populations: Habitat Intrinsic Potential Analysis. National Oceanic and Atmospheric Administration. Northwest Fisheries Center: Northwest Fisheries Center. 
+
+Eclipse Geomatics. 2021. Skeena ESI fish and fish habitat decision maker synthesis report (working draft for discussion) Version 1.0. Prepared for Office of the Wet’suwet’en and The Skeena Sustainability Assessment Forum by Eclipse Geomatics Ltd., Smithers, B. C. 
+
+Government, Gitxsan Hulwip. 2019.Release: Gitxsan Chiefs Extend Fishing Ban to 2020 & Urge Canada, BC and Ministries to Step up. http://gitxsan.ca/release-gitxsan-chiefs-extend-fishing-ban-to-2020-season-urge-canada-bc-and-flnro-to-step-up/. 
+
+Hoopes, D. Y. 1972.Selection of Spawning Sites by Sockeye Salmon in Small Streams. Fishery Bulletin. 
+
+Irvine, A. 2018.Analysis and Priority Identification of Existing Fish Passage Data: Bulkley River. http://a100.gov.bc.ca/pub/acat/public/viewReport.do?reportId=56648. 
+
+———. 2021.Bulkley River and Morice River Watershed Groups Fish Passage Restoration Planning 2020. Prepared by New Graph Environment on behalf of Society for Ecosystem Restoration in Northern BC for Habitat Conservation Trust Foundation – CAT21-6-288, B. C. Fish Passage Remediation Program, and Canadian Wildlife Federation. https://www.newgraphenvironment.com/fish_passage_bulkley_2020_reporting/  
+
+Irvine, A., M. Wintersheidt, and L. Schick. 2022.Bulkley River and Morice River Watershed Groups Fish Passage Restoration Planning 2021. Prepared by New Graph Environment on behalf of Society for Ecosystem Restoration in Northern BC for Habitat Conservation Trust Foundation – CAT21-6-288. Prepared by New Graph Environment on behalf of Society for Ecosystem Restoration in Northern BC for Canadian Wildlife Federation, Habitat Conservation Trust Foundation – CAT23-6-288, B. C. Fish Passage Remediation Program, and B. C. Ministry of Transportation and Infrastructure. https://www.newgraphenvironment.com/fish_passage_skeena_2021_reporting/  
+
+Irvine, A. and L. Schick. 2024.Skeena Watershed Fish Passage Restoration Planning 2023. Prepared by New Graph Environment on behalf of Society for Ecosystem Restoration in Northern BC for Habitat Conservation Trust Foundation – CAT23-6-288, B. C. Fish Passage Remediation Program, and B. C. Ministry of Transportation and Infrastructure. https://www.newgraphenvironment.com/fish_passage_skeena_2021_reporting/ 
+
+Irvine, A. and L. Schick. 2025.Skeena Watershed Fish Passage Restoration Planning 2024. Prepared by New Graph Environment on behalf of Society for Ecosystem Restoration in Northern BC for Habitat Conservation Trust Foundation – CAT23-6-288, B. C. Fish Passage Remediation Program, and B. C. Ministry of Transportation and Infrastructure. https://www.newgraphenvironment.com/fish_passage_skeena_2021_reporting/ 
+
+Lake, R. G. 1999.Activity and Spawning Behaviour in Spawning Sockeye Salmon. Thesis. UBC. 
+
+Mazany-Wright, N, S. M. Norris, N. W. R. Lapointe, and B. Rebellato. 2021a.“A Freshwater Connectivity Modelling Framework to Support Barrier Prioritization and Remediation in British Columbia.”Canadian Wildlife Federation, 2021a. 
+
+———. 2021c.“B.c. Fish Passage Restoration Initiative Target Watershed Selection Process: Technical Documentation.” Canadian Wildlife Federation, 2021c. 
+
+Mazany-Wright, N, S. M. Norris, S. Sra, J. Noseworthy, and N. W. R. Lapointe. 2021b.“Breaking down Barriers: A Practitioners’ Guide to Watershed Connectivity Remediation Planning.” Canadian Wildlife Federation, 2021b. 
+
+McCarthy, M., and A. Fernando. 2015.“2015 Inventory of High Priority Culverted Fish Passage Barriers in the Lower/Middle Skeena, Bulkley, Morice, and Babine River Watersheds.” 
+
+Mcmahon, T. E. 1983.“Habitat Suitability Index Models: Coho Salmon.” U.S. Department of the Interior, Fish and Wildlife Service 29. 
+
+Neuman, H. R., and C. P. Newcombe. 1977.Minimum Acceptable Stream Flows in British Columbia: A Review. Fisheries Management Report No. 70. 
+
+Office of the Wet’suwet’en. 2013.Wet’suwet’en Title and Rights Regarding Canada Department of Fisheries & Oceans and Pacific Trails Pipeline. http://www.wetsuweten.com/files/PTP_FHCP_Response_to_DFO-25Nov13-Final.pdf. 
+
+Pacific Salmon Foundation. 2025. Methods for Assessing Status and Trends in Pacific Salmon Conservation Units and their Freshwater Habitats. The Pacific Salmon Foundation, Vancouver B. C., Canada. Version 13. Available at salmonwatersheds.ca/document/lib_475/ [Accessed 12-05-2026]. 
+
+Porter, M., D. Pickard, K. Wieckowski, and K. Bryan. 2008.Developing Fish Habitat Models for Broad-Scale Forest Planning in the Southern Interior of B.C.ESSA Technologies Ltd.;B.C. Ministry of Environment. 
+
+Raleigh, R. F., and W. J. Miller. 1986.Habitat Suitability Index Models and Instream Flow Suitability Curves: Chinook Salmon.U.S. Fish and Wildlife Service Biological Reports 82. USFW. 
+
+Rescan. 2012.KSM Project: Gitxsan Nation Traditional Knowledge and Use Desk-Based Research Report. https://www.ceaa.gc.ca/050/documents_staticpost/49262/89282/Chapter_30_Appendices/Appendix_30-D_Gitxsan_Tradnl_Use_Desk_Based_Research_Report.pdf: Rescan Environmental Services Ltd. 
+
+Roberge, M., J. B. M. Hume, C. K. Minns, and T. Slaney. 2002.Life History Characteristics of Freshwater Fishes Occurring in British Columbia and the Yukon, with Major Emphasis on Stream Habitat Characteristics.Cultus Lake, British Columbia: Fisheries; Oceans Canada, Marine Environment; Habitat Science Division. 
+
+Rosenfeld, Jordan, Marc Porter, and Eric Parkinson. 2000.“Habitat Factors Affecting the Abundance and Distribution of Juvenile Cutthroat Trout (Oncorhynchus Clarki) and Coho Salmon (Oncorhynchus Kisutch).”Can. J. Fish. Aquat. Sci.57 (4): 766–74. 
+
+Schindler, C. Brock, D. E. P. R. Leavitt, and P. D. Quay. 2003.“The Importance of Marine-Derived Nutrients to Lake Productivity and Salmon Population Dynamics over the Last Five Centuries in Southwest Alaska.” 
+
+Seliger, Carina, and Bernhard Zeiringer. 2018.“River Connectivity, Habitat Fragmentation and Related Restoration Measures,”171–86. 
+
+Sheer, M. B., D. S. Busch, E. Gilbert, J. M. Bayer, S. Lanigan, J. L. Schei, K. M. Burnett, and D. Miller. 2009.Development and Management of Fish Intrinsic Potential Data and Methodologies: State of the IP2008 Summary Report. Pacific Northwest Aquatic Monitoring Partnership Series 2009—4, 56 pp. 
+
+Sloat, Matthew R., Gordon H. Reeves, and Kelly R. Christiansen. 2017.“Stream Network Geomorphology Mediates Predicted Vulnerability of Anadromous Fish Habitat to Hydrologic Change in Southeast Alaska.”Glob. Chang. Biol.23 (2): 604–20. 
+
+Smith, J. 2018.“Assessing Barriers to Fish Passage Within the Wet’suwet’en First Nation Traditional Territory.” 
+
+[SSAF] Skeena Sustainability Assessment Forum. 2021.“Skeena Sustainability Assessment Forum’s State of the Value Report for Fish & Fish Habitat.” 
+
+Wilson, T., and K. Rabnet. 2007.Fish Passage Assessment of Highway 16 and CN Rail in the Bulkley Watershed.https://data.skeenasalmon.info/dataset/fish-passage-assessment-highway-16-cn-rail-bulkley. 
+
+Woll, C., D. Albert, and D. Whited. 2017.A Preliminary Classification and Mapping of Salmon Ecological Systems in the Nushagak and Kvichak Watersheds. Alaska: The Nature Conservancy. 
