@@ -2,9 +2,27 @@
 
 ## Partners {-}
 
-Table 17: Bulkley River WCRP Planning Team members (past and present). Planning Team members contributed to the development of this plan by participating in scoping and planning meetings, and reviewing documents and data. 
+```{r echo = FALSE}
+#| label: table-16
+#| tbl-cap: "Table 16: Bulkley River WCRP Planning Team members (past and present). Planning Team members contributed to the development of this plan by participating in scoping and planning meetings, and reviewing documents and data."
+#| warning: false
+source("Rscripts/table_formatting.R")
+data <- read.csv("data/bulk_planning_team.csv", check.names=FALSE)
+ft <- flextable(data)
+ft <- format_flextable(ft)
+ft
+```
 
-Table 18: Additional Key Actors in the Bulkley River watershed. Key Actors are the individuals, groups, and/or organizations, outside of the Planning Team, with influence and relevant experience in the watershed, whose engagement will be critical for the successful implementation of this WCRP. 
+```{r echo = FALSE}
+#| label: table-17
+#| tbl-cap: "Table 17: Additional Key Actors in the Bulkley River watershed. Key Actors are the individuals, groups, and/or organizations, outside of the Planning Team, with influence and relevant experience in the watershed, whose engagement will be critical for the successful implementation of this WCRP."
+#| warning: false
+source("Rscripts/table_formatting.R")
+data <- read.csv("data/bulk_key_actors.csv", check.names=FALSE)
+ft <- flextable(data)
+ft <- format_flextable(ft)
+ft
+```
 
 ## Detailed Mathods  {-}
 For details about accessibility, habitat, or connectivity models including structure-ranking methods, see detailed documentation for BCFishPass here: https://smnorris.github.io/bcfishpass/index.html.  
@@ -15,14 +33,5 @@ S=0.6p+0.4r
 
 where p is the normalized pressure index and r is the normalized WCRP model barrier rank. In the undisturbed upweighting scenario, the calculation is identical but where p is replaced with (1−p). The final ranking is then determined by ordering the barriers first in ascending order of number of barriers downstream of the set, then in ascending order by weighted sum of pressure index and model ranking, with all barriers blocking less than 500 m of total habitat moved to the bottom of the list. 
 
-```{r echo = FALSE}
-#| label: table-6
-#| tbl-cap: "Tuzist’ol T’ah WCRP working group. Working group members contributed to the development of this plan by participating in scoping and planning meetings, and reviewing documents and data."
-#| warning: false
-source("Rscripts/table_formatting.R")
-data <- read.csv("data/table6.csv", check.names=FALSE)
-ft <- flextable(data)
-ft <- format_flextable(ft)
-ft
-```
+
 

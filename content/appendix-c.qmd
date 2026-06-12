@@ -11,34 +11,34 @@ The following situation model was developed by the WCRP partnership to “map”
 The Planning Team identified four broad strategies to implement through this WCRP: 1) barrier rehabilitation, 2) barrier prevention, 3) strengthen Indigenous connections to land and water, and 4) planning and progress tracking. Individual actions were qualitatively evaluated based on the anticipated effect each action will have on realizing on-the-ground gains in connectivity. Effectiveness ratings are based on a combination of “Feasibility” and ”Impact”. Feasibility is defined as the degree to which the project team can implement the action within realistic constraints (financial, time, ethical, etc.), and Impact is the degree to which the action is likely to contribute to achieving one or more of the goals established in this plan. 
 
 ### Strategy 1: Barrier Rehabilitation {-}
-Table 16: Strategy 1 – Barrier Rehabilitation. 
+ 
 ```{r  echo = FALSE, results = 'asis'}
-#| label: table-16
-#| tbl-cap: "Strategy 1: Barrier Rehabilitation "
+#| label: table-18
+#| tbl-cap: "Table 18: Strategy 1 – Barrier Rehabilitation. "
 #| warning: false
 #| echo: false
 
 source("Rscripts/table_formatting.R")
 library("flextable")
 
-data <- read.csv("data/strategy-barrier-remediation.csv", check.names=FALSE)
+data <- read.csv("data/bulk_strategy1_barrier_rehab.csv", check.names=FALSE)
 ft <- flextable(data)
 ft <- format_flextable(ft)
 ft
 ```
 
 ### Strategy 2: Lateral Barrier Prevention {-}
-Table 17: Strategy 2 – Barrier Prevention
+
 ```{r echo = FALSE, results = 'asis'}
-#| label: table-17
-#| tbl-cap: "Strategy 2: Barrier Prevention"
+#| label: table-19
+#| tbl-cap: "Table 19: Strategy 2 – Barrier Prevention"
 #| warning: false
 #| echo: false
 
 source("Rscripts/table_formatting.R")
 library("flextable")
 
-data <- read.csv("data/strategy-barrier-prevention.csv", check.names=FALSE)
+data <- read.csv("data/bulk_strategy2_barrier_prevention.csv", check.names=FALSE)
 ft <- flextable(data)
 ft <- format_flextable(ft)
 ft
@@ -47,17 +47,17 @@ ft
 
 ### Strategy 3: Strengthen Indigenous connections to land and water{-}
 
-Table 18: Strategy 3 – Strengthen Indigenous connections to land and water
+
 ```{r echo = FALSE, results = 'asis'}
-#| label: table-17
-#| tbl-cap: "Strategy 2: Barrier Prevention"
+#| label: table-20
+#| tbl-cap: "Table 20: Strategy 3 – Strengthen Indigenous connections to land and water"
 #| warning: false
 #| echo: false
 
 source("Rscripts/table_formatting.R")
 library("flextable")
 
-data <- read.csv("data/strategy-barrier-prevention.csv", check.names=FALSE)
+data <- read.csv("data/bulk_strategy3_indigenous_connections.csv", check.names=FALSE)
 ft <- flextable(data)
 ft <- format_flextable(ft)
 ft

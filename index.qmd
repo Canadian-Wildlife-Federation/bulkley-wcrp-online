@@ -1,13 +1,49 @@
 
+---
+jupyter: python3
+---
+
 ## Executive Summary {-}
+
+```{python}
+#| echo: false
+#| output: false
+from content.python.api_calls_v2 import get_metric_value, get_structure_count_value
+
+spawning_connected_km = get_metric_value("BULK", "accessible_spawning_all")
+spawning_disconnected_km = get_metric_value("BULK", "disconnected_spawning_all")
+spawning_total_km = get_metric_value("BULK", "total_spawning_all")
+spawning_connected_pct = round((spawning_connected_km / spawning_total_km) * 100, 1)
+
+rearing_connected_km = get_metric_value("BULK", "accessible_rearing_all")
+rearing_disconnected_km = get_metric_value("BULK", "disconnected_rearing_all")
+rearing_total_km = get_metric_value("BULK", "total_rearing_all")
+rearing_connected_pct = round((rearing_connected_km / rearing_total_km) * 100, 1)
+
+potentially_disconnect_spawning_structures = get_structure_count_value(
+    "bulk", "all_spawning", "structures_that_potentially_disconnect_habitat"
+)
+potentially_disconnect_rearing_structures = get_structure_count_value(
+    "bulk", "all_rearing", "structures_that_potentially_disconnect_habitat"
+)
+priority_barriers = get_structure_count_value(
+    "bulk", "all_spawningrearing", "priority_barriers"
+)
+non_actionable_barriers = get_structure_count_value(
+    "bulk", "all_spawningrearing", "non_actionable_barriers"
+)
+further_field_assessment = get_structure_count_value(
+    "bulk", "all_spawningrearing", "require_further_assessment"
+)
+```
 
 The purpose of the Bulkley River Watershed Connectivity Restoration Plan is to reduce the threat of aquatic barriers to Pacific salmon and steelhead in the Bulkley River watershed and the livelihoods that they support, including the values and laws of First Nations, as well their continued sustenance, cultural, and ceremonial needs both now and into the future. This plan aims to close knowledge gaps and plan and prioritize restoration by combining local data and knowledge with connectivity modelling to estimate current connectivity status and identify structures that potentially block the most habitat. This informs the prioritization of field assessments to close the most significant knowledge gaps efficiently. Information from field assessments of barrier status and habitat condition are incorporated into the model, improving understanding of which barriers block the most habitat, and informing restoration prioritization. In addition, this WCRP aims to determine which barriers are located on relatively intact subwatersheds or those that are relatively resilient to outside pressures, and which are located within degraded habitats or those that are more sensitive to development pressures. As knowledge gaps are closed and barriers are addressed, this plan will be revised to summarize progress and provide updated estimates of connectivity status and the status and relative importance of remaining structures. 
 
-In the Bulkley River watershed, X km of Pacific salmon and steelhead spawning habitat are currently connected to the ocean and X km are disconnected from it. This means that X% of the X km of total spawning habitat is connected.  
+In the Bulkley River watershed, `{python} spawning_connected_km` km of Pacific salmon and steelhead spawning habitat are currently connected to the ocean and `{python} spawning_disconnected_km` km are disconnected from it. This means that `{python} spawning_connected_pct`% of the `{python} spawning_total_km` km of total spawning habitat is connected.  
 
-In the Bulkley River watershed, X km of Pacific salmon and steelhead rearing habitat are currently connected to the ocean and X km are disconnected from it. This means that X% of the X km of total rearing habitat is connected. 
+In the Bulkley River watershed, `{python} rearing_connected_km` km of Pacific salmon and steelhead rearing habitat are currently connected to the ocean and `{python} rearing_disconnected_km` km are disconnected from it. This means that `{python} rearing_connected_pct`% of the `{python} rearing_total_km` km of total rearing habitat is connected. 
 
-In the Bulkley River watershed, X structures potentially disconnect focal species spawning  habitat, and X structures potentially disconnect focal species rearing habitat. Of these, X are identified as barriers in need of rehabilitation (priority barriers), X are identified as barriers that do not warrant rehabilitation (non-actionable), and X require further field assessment.  
+In the Bulkley River watershed, `{python} potentially_disconnect_spawning_structures` structures potentially disconnect focal species spawning habitat, and `{python} potentially_disconnect_rearing_structures` structures potentially disconnect focal species rearing habitat. Of these, `{python} priority_barriers` are identified as barriers in need of rehabilitation (priority barriers), `{python} non_actionable_barriers` are identified as barriers that do not warrant rehabilitation (non-actionable), and `{python} further_field_assessment` require further field assessment.  
 
 ![Figure 1: Map of Pacific salmon and steelhead spawning habitat and structures that are confirmed or potential barriers to fish passage in the Bulkley River watershed as of May 2026. Structure data were obtained from BCFishPass and the Canadian Aquatic Barriers Database (aquaticbarriers.ca). The accessibility model represents areas of the watershed that one or more Pacific salmon and steelhead could access naturally in the absence of anthropogenic barriers. The habitat model represents the subset of accessible waterbodies that may be used by one or more Pacific salmon and steelhead for spawning. Available local knowledge and data were incorporated and overruled habitat model results. Thick red lines represent habitat considered to be fully disconnected (upstream of barriers or unassessed structures). Barriers that were rehabilitated through implementation of this plan are shown, but other excluded structures (e.g., those found to be passable) are not.](content/images/Bulk_spawning_2026-05-28.png)
 ![Figure 2: Map of Pacific salmon and steelhead rearing habitat and structures that are confirmed or potential barriers to fish passage in the Bulkley River watershed as May 2026. Structure data were obtained from BCFishPass and the Canadian Aquatic Barriers Database (aquaticbarriers.ca). The accessibility model represents areas of the watershed that one or more Pacific salmon and steelhead could access naturally in the absence of anthropogenic barriers. The habitat model represents the subset of accessible waterbodies that may be used by one or more Pacific salmon and steelhead for rearing. Available local knowledge and data were incorporated and overruled habitat model results. Thick red lines represent habitat considered to be fully disconnected (upstream of barriers or unassessed structures). Barriers that were rehabilitated through implementation of this plan are shown, but other excluded structures (e.g., those found to be passable) are not.](content/images/Bulk_rearing_2026-05-28.png)
