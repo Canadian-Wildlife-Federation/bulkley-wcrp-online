@@ -3,7 +3,7 @@ project:
   output-dir: _book
 
 book:
-  title: "Stewiacke Watershed Connectivity Restoration Plan (WCRP)"
+  title: "Bulkley Watershed Connectivity Restoration Plan (WCRP)"
   author: "Canadian Wildlife Federation"
   date: last-modified
   date-format: "DD-MM-YYYY"

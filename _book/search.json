@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Stewiacke Watershed Connectivity Restoration Plan (WCRP)",
+    "title": "Bulkley Watershed Connectivity Restoration Plan (WCRP)",
     "section": "",
     "text": "Executive Summary\nThe purpose of the Bulkley River Watershed Connectivity Restoration Plan is to reduce the threat of aquatic barriers to Pacific salmon and steelhead in the Bulkley River watershed and the livelihoods that they support, including the values and laws of First Nations, as well their continued sustenance, cultural, and ceremonial needs both now and into the future. This plan aims to close knowledge gaps and plan and prioritize restoration by combining local data and knowledge with connectivity modelling to estimate current connectivity status and identify structures that potentially block the most habitat. This informs the prioritization of field assessments to close the most significant knowledge gaps efficiently. Information from field assessments of barrier status and habitat condition are incorporated into the model, improving understanding of which barriers block the most habitat, and informing restoration prioritization. In addition, this WCRP aims to determine which barriers are located on relatively intact subwatersheds or those that are relatively resilient to outside pressures, and which are located within degraded habitats or those that are more sensitive to development pressures. As knowledge gaps are closed and barriers are addressed, this plan will be revised to summarize progress and provide updated estimates of connectivity status and the status and relative importance of remaining structures.\nIn the Bulkley River watershed, 1175.42 km of Pacific salmon and steelhead spawning habitat are currently connected to the ocean and 154.09 km are disconnected from it. This means that 88.4% of the 1329.5 km of total spawning habitat is connected.\nIn the Bulkley River watershed, 1620.86 km of Pacific salmon and steelhead rearing habitat are currently connected to the ocean and 571.41 km are disconnected from it. This means that 73.9% of the 2192.28 km of total rearing habitat is connected.\nIn the Bulkley River watershed, 61 structures potentially disconnect focal species spawning habitat, and 393 structures potentially disconnect focal species rearing habitat. Of these, 20 are identified as barriers in need of rehabilitation (priority barriers), 8 are identified as barriers that do not warrant rehabilitation (non-actionable), and 366 require further field assessment.\nThis WCRP was initiated in 2021. Since then, the passability of 86 structures has been assessed, and further habitat assessments were completed at 47 of these. Fish passage has been rehabilitated at 3 barriers: a collapsed bridge was removed from Robert Hatch Creek on Hatch Creek Ranch; a culvert was replaced with a clearspan bridge on McDowell Creek at Woodmere Nursery, and a culvert under Highway 16 on Taman Creek was upgraded to a larger, embedded culvert, resulting in improved or restored access to 9.65 km of spawning habitat and 31.64 km of rearing habitat for focal species. Designs for 8 additional barriers have been either completed or are underway in the watershed.",
     "crumbs": [
@@ -12,7 +12,7 @@
   {
     "objectID": "index.html#executive-summary",
     "href": "index.html#executive-summary",
-    "title": "Stewiacke Watershed Connectivity Restoration Plan (WCRP)",
+    "title": "Bulkley Watershed Connectivity Restoration Plan (WCRP)",
     "section": "",
     "text": "Figure 3: Habitat Accumulation Curve (HAC) showing structures in the Bulkley River watershed as of May 2026. Structures are ranked based on how much (km) spawning habitat for Pacific salmon and steelhead is upstream, then by amount (km) of rearing habitat is upstream. The y-axis represents the cumulative amount of potential habitat gain (km). Habitat upstream of unassessed structures is considered disconnected until field assessments are completed. Structures that were excluded as passable are not shown; however, rehabilitated barriers are shown (where applicable) to demonstrate the connectivity gains achieved through implementation of this plan.\n\n\n\n\n\nFigure 4: Habitat Accumulation Curve (HAC) showing structures in the Bulkley River watershed as of May 2026, zoomed in to the top 65 structures. Structures are ranked based on how much (km) spawning habitat for Pacific salmon and steelhead is upstream, then by amount (km) of rearing habitat is upstream. Dashed lines show how much habitat must be reconnected to reach connectivity goals set for the watershed (see Goals). Habitat upstream of unassessed structures is considered disconnected until field assessments are completed. Structures that were excluded as passable are not shown; however, rehabilitated barriers are shown (where applicable) to demonstrate the connectivity gains achieved through implementation of this plan.",
     "crumbs": [
@@ -230,6 +230,16 @@
     ]
   },
   {
+    "objectID": "content/connectivity-status.html#current-connectivity-status",
+    "href": "content/connectivity-status.html#current-connectivity-status",
+    "title": "Key Ecological Attributes and Connectivity Status Results",
+    "section": "",
+    "text": "b",
+    "crumbs": [
+      "Key Ecological Attributes and Connectivity Status Results"
+    ]
+  },
+  {
     "objectID": "content/connectivity-status.html#goals",
     "href": "content/connectivity-status.html#goals",
     "title": "Key Ecological Attributes and Connectivity Status Results",
@@ -421,16 +431,6 @@
     "crumbs": [
       "Appendices",
       "Appendix B – Partners and Detailed Methods"
-    ]
-  },
-  {
-    "objectID": "content/connectivity-status.html#current-connectivity-status",
-    "href": "content/connectivity-status.html#current-connectivity-status",
-    "title": "Key Ecological Attributes and Connectivity Status Results",
-    "section": "",
-    "text": "b",
-    "crumbs": [
-      "Key Ecological Attributes and Connectivity Status Results"
     ]
   }
 ]
