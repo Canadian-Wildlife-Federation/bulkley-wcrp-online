@@ -40,8 +40,13 @@ ft
 ## Annual Progress Report {-}
 
 Since April 2025, the following actions were completed: 
-- Results of structures assessed from 2022-2024 were reviewed by the Office of the Wet-suwet’en and decisions made on next steps for each structure; 
-- Training was provided to Office of the Wet’suwet’en field technicians in barrier assessments, habitat confirmations, and electrofisher use; 
-- Owners were identified and contacted for 2 priority barriers;  
-- SSAF indicator ratings were incorporated into structure rankings, and 
-- The connectivity models was updated based on the above actions, and outputs were incorporated into this WCRP.
+
+ - Results of structures assessed from 2022-2024 were reviewed by the Office of the Wet-suwet’en and decisions made on next steps for each structure; 
+
+ - Training was provided to Office of the Wet’suwet’en field technicians in barrier assessments, habitat confirmations, and electrofisher use; 
+
+ - Owners were identified and contacted for 2 priority barriers;  
+
+ - SSAF indicator ratings were incorporated into structure rankings, and 
+
+ - The connectivity models was updated based on the above actions, and outputs were incorporated into this WCRP.

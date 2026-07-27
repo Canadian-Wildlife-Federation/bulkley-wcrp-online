@@ -57,17 +57,32 @@ The Planning Team identified two Key Ecological Attributes (KEAs) to assess the 
 
 In the Bulkley River watershed, `r py$spawning_connected_km` km of Pacific salmon and steelhead spawning habitat are currently connected to the ocean and `r py$spawning_disconnected_km` km are disconnected from it. This means that `r py$spawning_connected_pct`% of the `r py$spawning_total_km` km of total spawning habitat is connected. In the Bulkley River watershed, `r py$rearing_connected_km` km of Pacific salmon and steelhead rearing habitat are currently connected to the ocean and `r py$rearing_disconnected_km` km are disconnected from it. This means that `r py$rearing_connected_pct`% of the `r py$rearing_total_km` km of total rearing habitat is connected. 
 
-![Table 8: Connectivity status assessment for spawning (a) and rearing (b) habitat in the Bulkley River watershed. The two KEAs - Accessible Spawning Habitat and Accessible Rearing Habitat - are evaluated by dividing the length of linear habitat (of each type) that is currently accessible to focal species by the total length of all linear habitat (of each type) in the watershed. <br> a](images/bulk_tbl8.PNG)
+![Table 8: Connectivity status assessment for spawning (a) and rearing (b) habitat in the Bulkley River watershed. The two KEAs - Accessible Spawning Habitat and Accessible Rearing Habitat - are evaluated by dividing the length of linear habitat (of each type) that is currently accessible to focal species by the total length of all linear habitat (of each type) in the watershed. <br> a](images/bulk_tbl9.PNG)
+
 Comments: Indicator rating definitions are based on the consensus decisions of the Planning Team. The current status is based on the connectivity model output, which is current as of May 2026. 
 
-![b](images/bulk_tbl9.PNG)
+![b](images/bulk_tbl10.PNG)
 
 Comments: Indicator rating definitions are based on the consensus decisions of the Planning Team. The current status is based on the connectivity model output, which is current as of May 2026. 
 
 ## Goals {-}
 
-![Table 9: Goals to improve spawning (1) and rearing (2) habitat connectivity for focal species in the Bulkley River watershed over the lifespan of the WCRP (2021-2031). The goals were established in 2021 through discussions with the Planning Team and represent the resulting desired state of connectivity in the watershed. The goals differ from the current connectivity status due to closing of knowledge gaps from field investigations and rehabilitation of barriers in the watershed since that time. Goals are subject to change as more information and data are collected over the course of the plan timeline (e.g., the current connectivity status is updated based on barrier field assessments).](images/bulk_tbl9.PNG)
 
+
+#| label: table-9
+#| tbl-cap: "Table 9: Goals to improve spawning (1) and rearing (2) habitat connectivity for focal species in the Bulkley River watershed over the lifespan of the WCRP (2021-2031). The goals were established in 2021 through discussions with the Planning Team and represent the resulting desired state of connectivity in the watershed. The goals differ from the current connectivity status due to closing of knowledge gaps from field investigations and rehabilitation of barriers in the watershed since that time. Goals are subject to change as more information and data are collected over the course of the plan timeline (e.g., the current connectivity status is updated based on barrier field assessments)."
+#| warning: false
+#| echo: false
+#| results: asis
+
+source("Rscripts/table_formatting.R")
+library("flextable")
+
+data <- read.csv("data/bulk_goals.csv", check.names=FALSE)
+ft <- flextable(data)
+ft <- format_flextable(ft)
+ft
+```
 ## Structure Count {-}
 
 In the Bulkley River watershed, `r py$potentially_disconnect_spawning_structures` structures potentially disconnect focal species spawning habitat, and `r py$potentially_disconnect_rearing_structures` structures potentially disconnect focal species rearing habitat. Of these, `r py$priority_barriers` are identified as barriers in need of rehabilitation (priority barriers), `r py$non_actionable_barriers` are identified as barriers that do not warrant rehabilitation (non-actionable), and `r py$further_field_assessment` require further field assessment.  
