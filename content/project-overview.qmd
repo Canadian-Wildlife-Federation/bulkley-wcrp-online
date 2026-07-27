@@ -3,7 +3,7 @@
 
 ## Purpose{-}
 
-The Bulkley River Watershed Connectivity Restoration Plan (WCRP) represents the culmination of a collaborative planning effort for the Bulkley River watershed (excluding the Morice River, see Geographic Scope. This plan encompasses a portion of the traditional, unceded territories of the Wet’suwet’en and Gitxsan peoples.  
+The Bulkley River Watershed Connectivity Restoration Plan (WCRP) represents the culmination of a collaborative planning effort for the Bulkley River watershed (excluding the Morice River, see @sec-Scope. This plan encompasses a portion of the traditional, unceded territories of the Wet’suwet’en and Gitxsan peoples.  
 
 The purpose of the Bulkley River Watershed Connectivity Restoration Plan (WCRP) is to improve understanding of habitat connectivity for Pacific salmon and steelhead in the Bulkley River watershed and inform efforts to close knowledge gaps and plan and prioritize field assessments and restoration. This 10-year plan identifies priority actions that the Bulkley River WCRP Planning Team (see [Appendix B – Partners and Detailed Methods for a list of team members](appendix-b.qmd)) will undertake between 2021-2031 to conserve and restore fish passage in the watershed through strategies aimed at barrier rehabilitation, barrier prevention, and strengthening Indigenous connections to land and water. 
 
@@ -29,7 +29,7 @@ As knowledge gaps are closed and barriers are addressed, this plan is revised to
 Healthy, well-connected stream networks within the Bulkley River watershed support thriving populations of migratory and resident fish. In turn, these fish provide the continued sustenance, cultural, and ceremonial needs of the Wet’suwet’en and Gitxsan peoples, as they have since time immemorial. First Nations, residents, and visitors to the watershed work together for environmental stewardship to clarify, implement, and assess the effectiveness of actions to mitigate the negative effects of aquatic barriers, improving the resiliency of the stream network for the benefit and appreciation of all. 
 
 
-## Scope  {-}
+## Scope  {#sec-Scope}
 
 The Bulkley River watershed is located in the Middle Skeena River drainage basin in northwestern British Columbia (Figure 5). The Bulkley River watershed has a drainage area of 776,200 ha, spanning from Bulkley Lake in the southeast to the confluence with the Skeena River in the northwest. The watershed is generally divided into the “lower” Bulkley River and the “upper” Bulkley River by the confluence with the Morice River near the town of Houston. This WCRP focuses on habitat connectivity for Pacific salmon and steelhead in the Bulkley River watershed (Figure 5). Model outputs include an estimate of the current connectivity status along with structure ranks and counts. Structures are ranked based on the amount of potential habitat that may be present upstream, with separate rankings for focal species potential upstream spawning habitat and for potential upstream rearing habitat.   
 

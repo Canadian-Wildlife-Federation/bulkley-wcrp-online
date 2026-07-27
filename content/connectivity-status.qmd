@@ -68,7 +68,7 @@ Comments: Indicator rating definitions are based on the consensus decisions of t
 ## Goals {-}
 
 
-
+```{r}
 #| label: table-9
 #| tbl-cap: "Table 9: Goals to improve spawning (1) and rearing (2) habitat connectivity for focal species in the Bulkley River watershed over the lifespan of the WCRP (2021-2031). The goals were established in 2021 through discussions with the Planning Team and represent the resulting desired state of connectivity in the watershed. The goals differ from the current connectivity status due to closing of knowledge gaps from field investigations and rehabilitation of barriers in the watershed since that time. Goals are subject to change as more information and data are collected over the course of the plan timeline (e.g., the current connectivity status is updated based on barrier field assessments)."
 #| warning: false
