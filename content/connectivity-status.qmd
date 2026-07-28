@@ -57,11 +57,11 @@ The Planning Team identified two Key Ecological Attributes (KEAs) to assess the 
 
 In the Bulkley River watershed, `r py$spawning_connected_km` km of Pacific salmon and steelhead spawning habitat are currently connected to the ocean and `r py$spawning_disconnected_km` km are disconnected from it. This means that `r py$spawning_connected_pct`% of the `r py$spawning_total_km` km of total spawning habitat is connected. In the Bulkley River watershed, `r py$rearing_connected_km` km of Pacific salmon and steelhead rearing habitat are currently connected to the ocean and `r py$rearing_disconnected_km` km are disconnected from it. This means that `r py$rearing_connected_pct`% of the `r py$rearing_total_km` km of total rearing habitat is connected. 
 
-![Table 8: Connectivity status assessment for spawning (a) and rearing (b) habitat in the Bulkley River watershed. The two KEAs - Accessible Spawning Habitat and Accessible Rearing Habitat - are evaluated by dividing the length of linear habitat (of each type) that is currently accessible to focal species by the total length of all linear habitat (of each type) in the watershed. <br> a](images/bulk_tbl9.PNG)
+![Table 8: Connectivity status assessment for spawning (a) and rearing (b) habitat in the Bulkley River watershed. The two KEAs - Accessible Spawning Habitat and Accessible Rearing Habitat - are evaluated by dividing the length of linear habitat (of each type) that is currently accessible to focal species by the total length of all linear habitat (of each type) in the watershed. <br> a](images/kea1.PNG)
 
 Comments: Indicator rating definitions are based on the consensus decisions of the Planning Team. The current status is based on the connectivity model output, which is current as of May 2026. 
 
-![b](images/bulk_tbl10.PNG)
+![b](images/kea2.PNG)
 
 Comments: Indicator rating definitions are based on the consensus decisions of the Planning Team. The current status is based on the connectivity model output, which is current as of May 2026. 
 
