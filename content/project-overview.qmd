@@ -42,7 +42,7 @@ Gitxsan peoples– the traditional Gitxsan Laxyip spans the northern portion of 
 Wet’suwet’en peoples– the Bulkley River watershed is part of the larger Wet’suwet’en traditional territory. The hereditary territory is governed by a system made up of five clans – Gilseyhu (Big Frog), Laksilyu (Small Frog), Tsayu (Beaver), Gitdumden (Wolf/Bear) and Laksamshu (Fireweed) – each of which comprises multiple Yikhs (House Groups) represented by hereditary chiefs. The Wet’suwet’en steward the land based on Inuk Nu’at’en (Wet’suwet’en law), and the principle of Yintah, meaning everything is connected to the land (Office of the Wet’suwet’en (2013),Irvine (2021)). It is necessary to receive permission from the appropriate bands (Witset First Nation or Wet’suwet’en first Nation, Skin Tyee, Nee Tahi Buhn, or Burns Lake Band), nation representatives (Office of the Wet’suwet’en (2013)), and the individual Yikh chiefs for any work to occur on their territory. 
 
  
-![Figure 5: Map of the geographic scope of this connectivity restoration plan for Pacific salmon and steelhead in the Bulkley River watershed , British Columbia.](images/Bulkley_geo_scope.jpg){fig-cap-location: bottom}
+![Figure 5: Map of the geographic scope of this connectivity restoration plan for Pacific salmon and steelhead in the Bulkley River watershed , British Columbia.](images/Bulkley_geo_scope.jpg)
 
 
 ## Focal Species {-}
